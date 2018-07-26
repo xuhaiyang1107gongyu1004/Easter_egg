@@ -1,0 +1,200 @@
+{% extends "main.html" %}
+{% block title %}锻造大厅{% endblock %}
+{% block head %}
+    {{ super() }}
+    <link rel="stylesheet" href="{{ url_for("static",filename="css/duanzao.css") }}">
+{% endblock %}
+{% block content %}
+
+    <div><img class='pic' src="{{ url_for("static",filename="image/hall_packs_bg1.jpg") }}"></div>
+    <div><img class='pic' src="{{ url_for("static",filename="image/hall_packs_bg2.jpg") }}"></div>
+    <div><img class='pic' src="{{ url_for("static",filename="image/hall_packs_bg3.jpg") }}"></div>
+    <div><img class='pic' src="{{ url_for("static",filename="image/hall_packs_bg4.jpg") }}"></div> <!-- 四个背景图 -->
+
+    <div id='69'>
+        <div id='d66'>
+            <div><img id='d2' src={{ url_for("static",filename="image/side_anvil.png") }}></div>  <!-- 中间的大石头 -->
+            <div id='d301'><img id='d3' src="{{ url_for("static",filename="image/hammer.png") }}"></div>  <!-- 这是锤子 -->
+            <div><img id='d9' src="{{ url_for("static",filename="image/hammer_spark.png") }}"></div>  <!-- 这是锤子下面效果图 -->
+        </div>
+
+
+        <div id='d501'><img id='d5' src="{{ url_for("static",filename="image/spark_right.png") }}"></div>
+        <!-- 这是右面透明图 -->
+        <div id='d601'><img id='d6' src="{{ url_for("static",filename="image/spark_left.png") }}"></div>
+        <!-- 这是左上角透明图 -->
+
+
+        <div id='d67'>
+            <div id='kymj_torbar_DZ' onclick="leftBarClickSrc(this)"></div>  <!-- 这是矿源秘境 --> <!-- 超链接地址为矿源秘境页面 -->
+            <div id='d11'></div>  <!-- 这是锻造大厅 -->
+            <div id='shop_torbar_DZ' onclick="leftBarClickSrc(this)"></div>  <!-- 这是锻造商城 -->  <!-- 超链接为锻造商城页面 -->
+        </div>
+
+
+        <form action="/DZ" method="post">
+            <div id='68'>
+                <img id='d4' src="{{ url_for("static",filename="image/hall_bottom.png") }}">
+                <div><img id='d8' src="{{ url_for("static",filename="image/hall_bottom_pit.png") }}"></div>
+                <!-- 这是锻造位牌子里面东西 -->
+                <div id='d13'><img src="{{ url_for("static",filename="image/spark.png") }}"></div>  <!-- 第一栏钥匙锻造火焰-->
+                <!-- <div id='d181'></div> --> <!-- 第一栏空白背景 -->
+                <div id='d14'></div>  <!-- 第一栏合金钥匙 -->
+                <div id='d15'></div>  <!-- 第一栏金钥匙 -->
+                <div id='d16'></div>  <!-- 第一栏银钥匙 -->
+                <div id='d17'></div>  <!-- 第一栏铜钥匙 -->
+                <div id='d18'></div>  <!-- 第一栏铁钥匙 -->
+
+                <input type="radio" name="key_type" id='d181_forlabel' class="radio" value="{{ key_id[0] }}">
+                <label for="d181_forlabel" id="d181"></label>
+
+
+                <div id='d19'><img src="{{ url_for("static",filename="image/spark.png") }}"></div>  <!-- 第二栏钥匙锻造火焰-->
+                <div id='d20'></div>  <!-- 第二栏合金钥匙 -->
+                <div id='d21'></div>  <!-- 第二栏金钥匙 -->
+                <div id='d22'></div>  <!-- 第二栏银钥匙 -->
+                <div id='d23'></div>  <!-- 第二栏铜钥匙 -->
+                <div id='d230'></div><!-- 钥匙锻造时背景 -->
+                <div id='d24'></div>  <!-- 第二栏铁钥匙 -->
+                <div id='d25'></div>  <!-- 第二栏锁图案 -->
+                <!-- <div id='d251'></div> --> <!-- 第二栏空白背景 -->
+
+                <input type="radio" name="key_type" id='d251_forlabel' class="radio" value="{{ key_id[1] }}">
+                <label for="d251_forlabel" id="d251"></label>
+
+
+                <div id='d26'><img src="{{ url_for("static",filename="image/spark.png") }}"></div>  <!-- 第三栏钥匙锻造火焰-->
+                <!-- <div id='d261'></div>  -->
+
+                <input type="radio" name="key_type" id='d261_forlabel' class="radio" value="{{ key_id[2] }}">
+                <label for="d261_forlabel" id="d261"></label>
+
+                <div id='d27'></div>  <!-- 第三栏合金钥匙 -->
+                <div id='d28'></div>  <!-- 第三栏金钥匙 -->
+                <div id='d29'></div>  <!-- 第三栏银钥匙 -->
+                <div id='d30'></div>  <!-- 第三栏铜钥匙 -->
+                <div id='d31'></div>  <!-- 第三栏铁钥匙 -->
+                <div id='d32'></div>  <!-- 第三栏锁图案 -->
+                <!-- 第四栏 -->
+                <!-- <div id='d33'></div> -->
+
+                <input type="radio" name="key_type" id='d33_forlabel' class="radio" value="{{ key_id[3] }}">
+                <label for="d33_forlabel" id="d33"></label>
+
+                <div id='d331'><img src="{{ url_for("static",filename="image/spark.png") }}"></div>
+                <div id='d34'></div>
+                <div id='d35'></div>
+                <div id='d350'></div>
+                <div id='d36'></div>
+                <div id='d37'></div>
+                <div id='d38'></div>
+                <!-- 第五栏 -->
+                <div id='d39'></div>
+                <div id='d391'><img src="{{ url_for("static",filename="image/spark.png") }}"></div>
+                <div id='d40'></div>
+                <div id='d400'></div>
+                <!-- <div id='d401'></div> -->
+                <input type="radio" name="key_type" id='d401_forlabel' class="radio" value="{{ key_id[4] }}">
+                <label for="d401_forlabel" id="d401"></label>
+
+
+                <div id='d41'></div>
+                <div id='d42'></div>
+                <div id='d43'></div>
+                <div id='d44'></div>
+
+                <div id='d45'>【今日钥匙行情】</div>
+                <div id='d46'>银钥匙 2000{{ ynum }} U币</div>
+                <div id='d47'>金钥匙 2000{{ jnum }} U币</div>
+                <div id='d48'>钻石钥匙 2000{{ zsnum }} U币</div>
+                <div id='d49'>合金钥匙 2000{{ hjnum }} U币</div>
+
+                <div id='d50'>x {{ ore[10001] }}</div>
+                <div id='d51'>x {{ ore[10003] }}</div>
+                <div id='d52'>x {{ ore[10005] }}</div>
+                <div id='d53'>x {{ ore[10002] }}</div>
+                <div id='d54'>x {{ ore[10004] }}</div>
+                <div id='d55'>x {{ ore[10006] }}</div>
+
+
+                <!-- 取出 -->
+                <div>
+                    {% if  not btnSta[10101] %}
+                        <button value='submit' onclick='duanzao()' id='d61'></button>
+                    {% else %}
+                        <button value='submit' onclick='quchu()' id='d56'></button>
+                        <p class="time" id="d56_time">{{ btnSta[10101][1] }}</p>
+                    {% endif %}
+                </div>  <!-- 第一栏 -->
+                <div>
+                    {% if  not btnSta[10102] %}
+                        <button value='submit' onclick='duanzao()' id='d62'></button>
+                    {% else %}
+                        <button value='submit' onclick='quchu()' id='d57'></button>
+                        <p class="time" id="d57_time">{{ btnSta[10102][1] }}</p>
+                    {% endif %}
+                </div>  <!-- 第一栏 -->
+                <div>
+                    {% if  not btnSta[10103] %}
+                        <button value='submit' onclick='duanzao()' id='d63'></button>
+                    {% else %}
+                        <button value='submit' onclick='quchu()' id='d58'></button>
+                        <p class="time" id="d58_time">{{ btnSta[10103][1] }}</p>
+                    {% endif %}
+                </div>  <!-- 第一栏 -->
+                <div>
+                    {% if  not btnSta[10104] %}
+                        <button value='submit' onclick='duanzao()' id='d64'></button>
+                    {% else %}
+                        <button value='submit' onclick='quchu()' id='d59'></button>
+                        <p class="time" id="d59_time">{{ btnSta[10104][1] }}</p>
+                    {% endif %}
+                </div>  <!-- 第一栏 -->
+                <div>
+                    {% if  not btnSta[10105] %}
+                        <button value='submit' onclick='duanzao()' id='d65'></button>
+                    {% else %}
+                        <button value='submit' onclick='quchu()' id='d60'></button>
+                        <p class="time" id="d60_time">{{ btnSta[10105][1] }}</p>
+                    {% endif %}
+                </div>  <!-- 第一栏 -->
+                <!-- 第五栏 -->
+            </div> <!-- 这是锻造位 -->
+        </form>
+    </div>
+
+    <script>
+        var d9 = document.getElementById("d9");
+        setInterval(function(){
+            if(d9.style.display == 'block'){
+                d9.setAttribute("style", "display:none");
+            }
+            else
+            {
+                d9.setAttribute('style', 'display:block');
+            }},
+        999
+        )
+    </script>
+    <script>
+        function duanzao() {
+            var t = document.getElementById('d57');
+            t.style.zindex = 99;
+
+        }
+
+
+    </script>
+    <!-- <script>
+        var d3=document.getElementById("d3");
+        setInterval(()=>{
+            if(d3.style.display=='block'){
+                d3.setAttribute("style","display:none");
+            }else{
+                d3.setAttribute('style','display:block');
+            }
+        },900)
+    </script> -->
+
+
+{% endblock %}

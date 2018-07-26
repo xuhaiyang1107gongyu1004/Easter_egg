@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta Author="hero">
+    <meta time=[[$]]>
+    <meta E_meil="gmclqb@163.com">
+    <title>开启愚公移山之路</title>
+    <link rel="stylesheet" href="/static/css/taiji.css">
+    <link rel="stylesheet" href="/static/css/css_footer_001.css">
+    <link rel="stylesheet" href="/static/css/login_css_01.css">
+    <link rel="stylesheet" href="/static/css/audio_css.css">
+</head>
+<body>
+<h1 align="center">开启成神之路</h1>
+
+<!-- 背景音乐 -->
+<audio controls="controls" loop="loop" preload="auto"
+       src="{{ url_for("static",filename="music/background_music.mp3") }}">
+    你的浏览器不支持audio标签
+</audio>
+<form action="register" method="post">
+    <ul>
+        {#          用户名                   #}
+        <li>
+            <span class="title">用户名</span>
+            <span><input type="text" name="username" maxlength="20" placeholder="请尝试邮箱账号"></span>
+            <span class="text">这是你用来征服世界的唯一通行证</span>
+        </li>
+        {#          密码                     #}
+        <li>
+            <span class="title">密码</span>
+            <span><input type="password" name="userpasswd" maxlength="20" placeholder="由字母数字下划线组成"></span>
+            <span class="text">密码的安全性一定要高</span>
+        </li>
+        {#          确认密码                  #}
+        <li>
+            <span class="title">确认密码</span>
+            <span><input type="password" name="userpasswd2" maxlength="20" placeholder="和上面的密码一样"></span>
+            <span class="text">一定要记住自己的密码哦</span>
+        </li>
+        {#          用户昵称                  #}
+        <li>
+            <span class="title">昵称</span>
+            <span><input type="text" name="usernick" maxlength="20" placeholder="萌萌哒"></span>
+            <span class="text">昵称嘛，一定要萌萌哒</span>
+        </li>
+        {#          用户手机号                #}
+        {#          登录按钮                 #}
+        <li>
+            <span class="title"></span>
+            <span><input class="button" type="submit" value="开启成神之路"></span>
+        </li>
+    </ul>
+
+</form>
+<div align="center" id="footer">
+    <p>
+        版权所有&copy;萌萌哒第二小分队 达内集团13教室
+    </p>
+    <p>
+        <span><a href="#">联系我们</a></span>
+        <span><a href="#">支持正版</a></span>
+        <span><a href="#">打赏充值</a></span>
+        <span><a href="#">广告合作</a></span>
+    </p>
+</div>
+<div name="taiji" id="taiji">
+    <div id="taiji-1-wilte"></div>
+    <div id="taiji-1-black"></div>
+    <div id="taiji-2-wilte"></div>
+    <div id="taiji-2-black"></div>
+    <div id="taiji-3-wilte"></div>
+    <div id="taiji-3-black"></div>
+</div>
+</body>
+</html>

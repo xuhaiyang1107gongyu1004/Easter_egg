@@ -1,0 +1,51 @@
+DROP DATABASE Easter_egg;
+CREATE DATABASE Easter_egg DEFAULT CHARSET = utf8;
+USE Easter_egg;
+# 创建user表
+CREATE TABLE user(
+  userid INT PRIMARY KEY AUTO_INCREMENT,
+  username CHAR(20) NOT NULL DEFAULT  'Usertest',
+  passwd CHAR(20) NOT NULL DEFAULT  888888,
+  money INT NOT NULL DEFAULT 0,
+  jifen INT NOT NULL DEFAULT 0,
+  usernick CHAR(20) NOT NULL DEFAULT '测试用户',
+  userlv INT NOT NULL DEFAULT 0,
+  head_protraid MEDIUMBLOB,
+  lv INT NOT NULL DEFAULT 0,
+  exp_lv INT NOT NULL  DEFAULT 0
+) DEFAULT CHARSET = utf8;
+
+# 创建道具表
+# 道具图片存的是图片路径
+CREATE TABLE item(
+  id INT PRIMARY KEY AUTO_INCREMENT,
+  itemid INT NOT NULL ,
+  ownerid INT NOT NULL ,
+  item_name CHAR(20) NOT NULL DEFAULT "测试道具",
+  item_num INT NOT NULL DEFAULT 0,
+
+  FOREIGN KEY (ownerid) REFERENCES user(userid)
+  ON DELETE CASCADE
+  ON UPDATE CASCADE
+)DEFAULT CHARSET = utf8;
+
+#  创建签到到表
+# 如果值为1 则表示已经签到，如果 值为0表示当天没有签到
+CREATE TABLE qiandao(
+  userid INT,
+  day1 BOOL NOT NULL DEFAULT 0 ,
+  day2 BOOL NOT NULL DEFAULT 0 ,
+  day3 BOOL NOT NULL DEFAULT 0 ,
+  day4 BOOL NOT NULL DEFAULT 0 ,
+  day5 BOOL NOT NULL DEFAULT 0 ,
+  day6 BOOL NOT NULL DEFAULT 0 ,
+  day7 BOOL NOT NULL DEFAULT 0 ,
+  day8 BOOL NOT NULL DEFAULT 0 ,
+  day9 BOOL NOT NULL DEFAULT 0 ,
+  day10 BOOL NOT NULL DEFAULT 0,
+  FOREIGN KEY (userid) REFERENCES user(userid)
+  ON DELETE CASCADE
+  ON UPDATE CASCADE
+)DEFAULT CHARSET = utf8;
+
+# 创建交易列表

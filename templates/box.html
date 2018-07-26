@@ -1,0 +1,127 @@
+{% extends "main.html" %}
+{% block title %}神秘宝箱{% endblock %}
+{% block head %}
+    {{ super() }}
+    <link rel="stylesheet" href="{{ url_for("static",filename="css/box.css") }}">
+{% endblock %}
+{% block content %}
+    <!-- 四个背景图-->
+    <div class="a1">
+        <div><img src="{{ url_for("static",filename="image/bg1.jpg") }}"></div>
+        <div><img src="{{ url_for("static",filename="image/bg2.jpg") }}"></div>
+        <div><img src="{{ url_for("static",filename="image/bg3.jpg") }}"></div>
+        <div><img src="{{ url_for("static",filename="image/bg4.jpg") }}"></div>
+        <form action="box" method="post">
+            <div id='a'>
+                <div><img src="{{ url_for("static",filename="image/main_border.png") }}"></div>
+                <div id='b'><img src="{{ url_for("static",filename="image/content_bg.jpg") }}"></div>
+                <div id='c1'></div>
+                <div class='monty01'>
+                    <input type="radio" name="box" id="c1_forlabel" value="{{ boxid[0] }}" class="radio">
+                    <!-- 矿山的照片 -->
+                    <label for="c1_forlabel" id="c1"></label>
+                </div>
+                <div id='c2'></div>
+                <div class='monty01'>
+                    <input type="radio" name="box" id="c2_forlabel" value="{{ boxid[1] }}" class="radio">
+                    <!-- 矿山的照片 -->
+                    <label for="c2_forlabel" id="c2"></label>
+                </div>
+                <div id='c3'></div>
+                <div class='monty01'>
+                    <input type="radio" name="box" id="c3_forlabel" value="{{ boxid[2] }}" class="radio">
+                    <!-- 矿山的照片 -->
+                    <label for="c3_forlabel" id="c3"></label>
+                </div>
+                <div id='c4'></div>
+                <div class='monty01'>
+                    <input type="radio" name="box" id="c4_forlabel" value="{{ boxid[3] }}" class="radio">
+                    <!-- 矿山的照片 -->
+                    <label for="c4_forlabel" id="c4"></label>
+                </div>
+                <div id='c5'></div>
+                <div class='monty01'>
+                    <input type="radio" name="box" id="c5_forlabel" value="{{ boxid[4] }}" class="radio">
+                    <!-- 矿山的照片 -->
+                    <label for="c5_forlabel" id="c5"></label>
+                </div>
+                <div id='c6'></div>
+                <div class='monty01'>
+                    <input type="radio" name="box" id="c6_forlabel" value="{{ boxid[5] }}" class="radio">
+                    <!-- 矿山的照片 -->
+                    <label for="c6_forlabel" id="c6"></label>
+                </div>
+
+                <div id='c7'></div>
+                <div id='c8'></div>
+                <div id='c9'></div>
+                <div id='c10'></div>
+                <div id='c11'></div>
+                <div id='c12'></div>
+                <div id='c13'></div>
+                <div id='c14'></div>
+                <div id='c15'></div>
+                <div id='c16'></div>
+                <div id='c17'></div>
+                <div id='c18'></div>
+                <div>
+                    <button type="submit" id='c19'></button>
+                </div>
+                <div>
+                    <button type="submit" id='c20'></button>
+                </div>
+                <div>
+                    <button type="submit" id='c21'></button>
+                </div>
+                <div>
+                    <button type="submit" id='c22'></button>
+                </div>
+                <div>
+                    <button type="submit" id='c23'></button>
+                </div>
+                <div>
+                    <button type="submit" id='c24'></button>
+                </div>
+                <div id='c25'></div>
+                <div id='c26'></div>
+                <div id='c27'></div>
+                <div id='c28'></div>
+                <div id='c29'></div>
+                <div id='c30'></div>
+                <div id='c31'></div>
+{#                <div>#}
+{#                    <button type="submit" id='c32'></button>#}
+{#                    <input type="button" value="submit" id="c32">#}
+{#                </div>#}
+{#                <div>#}
+{#                    <button type="submit" id='c33'></button>#}
+{#                </div>#}
+{#                <div>#}
+{#                    <button type="submit" id='c34'></button>#}
+{#                </div>#}
+{#                <div>#}
+{#                    <button type="submit" id='c35'></button>#}
+{#                </div>#}
+{#                <div>#}
+{#                    <button type="submit" id='c36'></button>#}
+{#                </div>#}
+{#                <div>#}
+{#                    <button type="submit" id='c37'></button>#}
+{#                </div>#}
+                <div id='c38'></div>
+                <div id='c39'></div>
+                <div id='c40'></div>
+                <div id='c41'></div>
+                <div id='c42'></div>
+                <div id='c43'></div>
+                <div id='c44'>x {{ keyNum['10101'] }}</div>
+                <div id='c45'>x {{ keyNum['10102'] }}</div>
+                <div id='c46'>x {{ keyNum['10103'] }}</div>
+                <div id='c47'>x {{ keyNum['10104'] }}</div>
+                <div id='c48'>x {{ keyNum['10105'] }}</div>
+                <div id='c49'>x {{ keyNum['10106'] }}</div>
+                <div id='c50'><img src="{{ url_for("static",filename="image/front_bg.png") }}"></div>
+            </div>
+        </form>
+    </div>
+{% endblock %}

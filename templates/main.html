@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+
+    <meta charset="UTF-8">
+    <meta Author="hero">
+    <meta time=[[$]]>
+    <meta E_meil="gmclqb@163.com">
+    <link rel="stylesheet" href="{{ url_for("static",filename="css/css_footer_001.css") }}">
+    <link rel="stylesheet" href="{{ url_for("static",filename="css/taiji.css") }}">
+    <link rel="stylesheet" href="{{ url_for("static",filename="css/css_topbar_001.css") }}">
+    <link rel="stylesheet" href="{{ url_for("static",filename="css/audio_css.css") }}">
+    <script src="{{ url_for("static",filename="__js/main_left_bar.js") }}"></script>
+    <script src="{{ url_for("static",filename="__js/jquery-3.3.1.js") }}"></script>
+    <title>成神之路--{% block title %}{% endblock %}</title>
+    {% block head %}{% endblock %}
+</head>
+<body>
+<!-- 背景音乐 -->
+<audio controls="controls" loop="loop" preload="auto"
+       src="{{ url_for("static",filename="music/background_music.mp3") }}">
+    你的浏览器不支持audio标签
+</audio>
+<div id="main_content">
+    <div id="content">
+        <!-- 这里是页面内容,需要由子模版规定 -->
+        {% block content %}{% endblock %}
+        {% if err %}
+            <div id="err" onclick="hiddenself(event)">
+                <p>点击关闭弹窗:</p>
+                <p>{{ err }}</p>
+            </div>
+        {% endif %}
+    </div>
+    <div id="topbar">
+        <!-- 这里是顶部导航条的内容 -->
+        <div id="header">
+            <div>
+                <!-- 这里是用户头像 -->
+                {#                { % if header_pic % }#}
+                {#                <img id="head_pic" src="{{ url_for("static",filename="{ % header_pic % }") }}" alt="">#}
+                {#                {% else %}#}
+                <img id="head_pic" src="{{ url_for("static",filename="image/02.gif") }}" alt="">
+            </div>
+            <p>{{ user.getUserinfo()['usernick'] }}</p>
+            <p>id : {{ user.getUserinfo()['userid'] }}</p>
+        </div>
+        <!-- 等级 -->
+        <div id="lv">
+            <span>{{ user.getUserinfo()['lv'] }}</span>
+            <span>{{ user.getUserinfo()['exp_lv'] }} / {{ user_lv_exp.get(user.getUserinfo()['lv'] ) }}</span>
+        </div>
+        <!-- 金币 -->
+        <div id="gold">
+            <span>金币：{{ user.getUserinfo()['money'] }}</span>
+        </div>
+        <!-- 积分 -->
+        <div id="jifen">
+            <span>积分：{{ user.getUserinfo()['jifen'] }}</span>
+        </div>
+        <!-- 其他功能导航 -->
+        <div id="orther">
+            <p id="day">
+                <a href="#"></a>
+            </p>
+            <p id="gift">
+                <a href="#"></a>
+            </p>
+            <p id="event">
+                <a href="#"></a>
+            </p>
+            <p id="story">
+                <a href="#"></a>
+            </p>
+        </div>
+        <img src="{{ url_for("static",filename="image/top_userinfo_bg.png") }}" alt="">
+
+        <!-- 左边条 -->
+        <div id="leftbar">
+            <!-- 这里是左侧导航列表 -->
+            <p id="kymj" onclick="leftBarClickSrc(this)">
+            </p>
+            <p id="dzdt" onclick="leftBarClickSrc(this)">
+            </p>
+            <p id="smbox" onclick="leftBarClickSrc(this)">
+            </p>
+            <p id="sendhome" onclick="leftBarClickSrc(this)">
+            </p>
+            <p id="bang" onclick="leftBarClickSrc(this)">
+            </p>
+            <p id="pmhome" onclick="leftBarClickSrc(this)">
+            </p>
+        </div>
+        <!-- 页脚信息 -->
+        <div align="center" id="footer">
+            <p align="center">
+                版权所有&copy;萌萌哒第二小分队 达内集团13教室
+            </p>
+            <p>
+                <span><a href="#">联系我们</a></span>
+                <span><a href="#">支持正版</a></span>
+                <span><a href="#">打赏充值</a></span>
+                <span><a href="#">广告合作</a></span>
+            </p>
+        </div>
+        <!-- logo 图标 -->
+        <div name="taiji" id="taiji">
+            <div id="taiji-1-wilte"></div>
+            <div id="taiji-1-black"></div>
+            <div id="taiji-2-wilte"></div>
+            <div id="taiji-2-black"></div>
+            <div id="taiji-3-wilte"></div>
+            <div id="taiji-3-black"></div>
+        </div>
+
+    </div>
+
+</div>
+
+</body>
+</html>

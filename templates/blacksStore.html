@@ -1,0 +1,133 @@
+{% extends 'main.html' %}
+{% block title %}锻造商城{% endblock %}
+{% block head %}
+    {{ super() }}
+    <link rel="stylesheet" href="{{ url_for("static" ,filename="css/blacksStore.css") }}">
+{% endblock %}
+{% block content %}
+
+    <!-- 整个页面的div -->
+    <div><img class='bg' src="{{ url_for("static",filename="image/hall_packs_bg1.jpg") }}"></div>
+    <div><img class='bg' src="{{ url_for("static",filename="image/hall_packs_bg2.jpg") }}"></div>
+    <div><img class='bg' src="{{ url_for("static",filename="image/hall_packs_bg3.jpg") }}"></div>
+    <div><img class='bg' src="{{ url_for("static",filename="image/hall_packs_bg4.jpg") }}"></div>
+    <!-- 右上角的链接 -->
+    <!-- 矿源秘境 -->
+    <div id='kymj_torbar_shop' onclick="leftBarClickSrc(this)"></div>
+    <!-- 	锻造大厅 -->
+    <div id='dzdt_torbar_shop' onclick="leftBarClickSrc(this)"></div>
+    <!-- 锻造商城 -->
+    <div id='d3'></div>
+    <!-- 框图下面的锤子 -->
+    <div id="d6"></div>
+    <!-- 锻造商城的框图 -->
+    <div id='s'>
+        <div><img id="d4" src="{{ url_for("static",filename="image/main_border.png") }}"></div>
+        <!-- 最右边的火炉 -->
+        <div><img id="d7" src="{{ url_for("static",filename="image/side_anvil.png") }}"></div>
+        <!-- 道具 -->
+        <div><img id="d8" src="{{ url_for("static",filename="image/data_image_png;base… (1).png") }}"></div>
+        <!-- 矿石 -->
+        <div><img id="d9" src="{{ url_for("static",filename="image/data_image.png") }}"></div>
+        <!-- 锻造商城 -->
+        <div id="d10"></div>
+        <!-- 	道具格子 -->
+        <div>
+            <div id="d11"><img src="{{ url_for("static",filename="image/shop_content_bg.jpg") }}"></div>
+            <!-- 挖矿工具 -->
+            <div id="d12" onmouseover="mouseOver(event)" onmousemove="mouseMove(event)" onmouseOut="mouseOut(event)">
+                <div class="d12-1">
+                    <p>名字：{{ iteminfo[10201]['item_name'] }}</p>
+                    <p>单价：{{ iteminfo[10201]['item_price'] }}</p>
+                    <p>类型：{{ iteminfo[10201]['item_msg'] }}</p>
+                    <p>{{ iteminfo[10201]['item_home'] }}</p>
+                </div>
+            </div>
+            <div id="d13" onmouseover="mouseOver(event)" onmousemove="mouseMove(event)" onmouseOut="mouseOut(event)">
+                <div class="d12-1">
+                    <p>名字：{{ iteminfo[10202]['item_name'] }}</p>
+                    <p>单价：{{ iteminfo[10202]['item_price'] }}</p>
+                    <p>类型：{{ iteminfo[10202]['item_msg'] }}</p>
+                    <p>{{ iteminfo[10202]['item_home'] }}</p>
+                </div>
+            </div>
+            <div id="d14" onmouseover="mouseOver(event)" onmousemove="mouseMove(event)" onmouseOut="mouseOut(event)">
+                <div class="d12-1">
+                    <p>名字：{{ iteminfo[10203]['item_name'] }}</p>
+                    <p>单价：{{ iteminfo[10203]['item_price'] }}</p>
+                    <p>类型：{{ iteminfo[10203]['item_msg'] }}</p>
+                    <p>{{ iteminfo[10203]['item_home'] }}</p>
+                </div>
+            </div>
+            <div id="d15" onmouseover="mouseOver(event)" onmousemove="mouseMove(event)" onmouseOut="mouseOut(event)">
+                <div class="d12-1">
+                    <p>名字：{{ iteminfo[10204]['item_name'] }}</p>
+                    <p>单价：{{ iteminfo[10204]['item_price'] }}</p>
+                    <p>类型：{{ iteminfo[10204]['item_msg'] }}</p>
+                    <p>{{ iteminfo[10204]['item_home'] }}</p>
+                </div>
+            </div>
+            <div id="d16" onmouseover="mouseOver(event)" onmousemove="mouseMove(event)" onmouseOut="mouseOut(event)">
+                <div class="d12-1">
+                    <p>名字：{{ iteminfo[10205]['item_name'] }}</p>
+                    <p>单价：{{ iteminfo[10205]['item_price'] }}</p>
+                    <p>类型：{{ iteminfo[10205]['item_msg'] }}</p>
+                    <p>{{ iteminfo[10205]['item_home'] }}</p>
+                </div>
+            </div>
+            <div id="d17" onmouseover="mouseOver(event)" onmousemove="mouseMove(event)" onmouseOut="mouseOut(event)">
+                <div class="d12-1">
+                    <p>名字：{{ iteminfo[10206]['item_name'] }}</p>
+                    <p>单价：{{ iteminfo[10206]['item_price'] }}</p>
+                    <p>类型：{{ iteminfo[10206]['item_msg'] }}</p>
+                    <p>{{ iteminfo[10206]['item_home'] }}</p>
+                </div>
+            </div>
+            <!-- 工具名字 -->
+            <div id="d18"></div>
+            <div id="d19"></div>
+            <div id="d20"></div>
+            <div id="d21"></div>
+            <div id="d22"></div>
+            <div id="d23"></div>
+            <!-- 金币 -->
+            <div id="d24"></div>
+            <span id="sp1">x{{ iteminfo[10201]['item_price'] }}</span>
+            <div id="d25"></div>
+            <span id='sp2'>x{{ iteminfo[10202]['item_price'] }}</span>
+            <div id="d26"></div>
+            <span id='sp3'>x{{ iteminfo[10203]['item_price'] }}</span>
+            <div id="d27"></div>
+            <span id='sp4'>x{{ iteminfo[10204]['item_price'] }}</span>
+            <div id="d28"></div>
+            <span id='sp5'>x{{ iteminfo[10205]['item_price'] }}</span>
+            <div id="d29"></div>
+            <span id='sp6'>x{{ iteminfo[10206]['item_price'] }}</span>
+            <!-- 购买 -->
+            <div class="buy">
+                <div id="d30" onclick="onClick(event)">
+                    <input type="hidden" name="item" value="{{ iteminfo[10201]['itemid'] }}">
+                </div>
+                <div id="d31" onclick="onClick(event)">
+                    <input type="hidden" name="item" value="{{ iteminfo[10202]['itemid'] }}">
+                </div>
+                <div id="d32" onclick="onClick(event)">
+                    <input type="hidden" name="item" value="{{ iteminfo[10203]['itemid'] }}">
+                </div>
+                <div id="d33" onclick="onClick(event)">
+                    <input type="hidden" name="item" value="{{ iteminfo[10204]['itemid'] }}">
+                </div>
+                <div id="d34" onclick="onClick(event)">
+                    <input type="hidden" name="item" value="{{ iteminfo[10205]['itemid'] }}">
+                </div>
+                <div id="d35" onclick="onClick(event)">
+                    <input type="hidden" name="item" value="{{ iteminfo[10206]['itemid'] }}">
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+    <script src="{{ url_for("static" ,filename="__js/blacksStore.js") }}"></script>
+{% endblock %}
+

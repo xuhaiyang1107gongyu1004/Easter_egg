@@ -1,0 +1,259 @@
+body, p, div {
+    margin: 0px;
+    padding: 0px;
+    border: none;
+}
+
+button, input {
+    box-shadow: none;
+    border: none;
+    background: none;
+    outline: none;
+
+}
+
+img {
+    vertical-align: bottom;
+}
+
+body {
+    width: 100%;
+}
+
+#main_content {
+    display: flex;
+    justify-content: center; /*水平居中*/
+    width: 1920px;
+    height: 100%;
+}
+
+/*整体布局定位*/
+#topbar, #content {
+    /*固定定位在页面的顶部*/
+    position: absolute;
+    top: 0;
+    margin: 0 auto;
+}
+
+#leftbar {
+    /*固定定位在页面的左边*/
+    position: absolute;
+    left: 300px;
+    top: 300px;
+}
+
+#topbar > div {
+    position: absolute;
+}
+
+/*设置logo位置*/
+#taiji {
+    left: 25%;
+    top: 65%;
+}
+
+/*设置页脚布局*/
+#footer {
+    position: absolute;
+    bottom: -900px;
+    left: 800px;
+}
+
+/*头像布局定位*/
+#header {
+    transform: translate(384px, 35px);
+}
+
+#head_pic {
+    border-radius: 50%;
+    width: 75px;
+    box-shadow: 0 0 16px 1px #000;
+}
+
+/* 昵称布局*/
+#header > p {
+    transform: translate(100px, -75px);
+}
+
+/*设置等级 经验位置*/
+#lv {
+    transform: translate(670px, 40px)
+}
+
+/*设置 等级 经验 内容之间的间距 */
+#lv > span {
+    margin-right: 30px;
+}
+
+/*设置金币的位置*/
+#gold {
+    transform: translate(900px, 40px)
+}
+
+/*设置积分的位置*/
+
+#jifen {
+    transform: translate(1130px, 40px)
+}
+
+/*设置其他功能位置*/
+#orther {
+    transform: translate(1320px, 40px)
+}
+
+/*设置其他功能中个个功能按钮的布局*/
+#orther > p {
+    float: left;
+    padding: 10px;
+    margin-left: 10px;
+}
+
+/*矿源秘境 按钮列表*/
+#kymj {
+    width: 168px;
+    height: 66px;
+    background: url("../image/menu_bg.png") -10px -507px;
+}
+
+#kymj:hover, .btnHover {
+    width: 219px;
+    height: 84px;
+    background: url("../image/menu_bg.png") -210px -499px;
+}
+
+#dzdt {
+    width: 168px;
+    height: 66px;
+    background: url("../image/menu_bg.png") -10px -90px;
+}
+
+#dzdt:hover, .btnHover {
+
+    width: 219px;
+    height: 81px;
+    background: url("../image/menu_bg.png") -218px -82px;
+}
+
+#smbox {
+    width: 168px;
+    height: 66px;
+    background: url("../image/menu_bg.png") -10px -173px;
+}
+
+#smbox:hover, .btnHover {
+
+    width: 219px;
+    height: 81px;
+    background: url("../image/menu_bg.png") -218px -167px;
+}
+
+#sendhome {
+    width: 168px;
+    height: 66px;
+    background: url("../image/menu_bg.png") -10px -257px;
+}
+
+#sendhome:hover, .btnHover {
+
+    width: 219px;
+    height: 81px;
+    background: url("../image/menu_bg.png") -210px -249px;
+}
+
+#bang {
+    width: 168px;
+    height: 66px;
+    background: url("../image/menu_bg.png") -10px -340px;
+}
+
+#bang:hover, .btnHover {
+
+    width: 219px;
+    height: 81px;
+    background: url("../image/menu_bg.png") -210px -334px;
+}
+
+#pmhome {
+    width: 168px;
+    height: 66px;
+    background: url("../image/menu_bg.png") -10px -423px;
+}
+
+#pmhome:hover, .btnHover {
+
+    width: 219px;
+    height: 81px;
+    background: url("../image/menu_bg.png") -210px -417px;
+}
+
+/*签到，礼包，事件，规则 相关按钮定位背景*/
+#day {
+    width: 25px;
+    height: 10px;
+    background: url("../image/top_nav_txt.png") -130px -21px;
+}
+
+#day:hover, .btnHover {
+    width: 25px;
+    height: 3px;
+    background: url("../image/top_nav_txt.png") -130px 0px;
+}
+
+#gift {
+    width: 23px;
+    height: 7px;
+    background: url("../image/top_nav_txt.png") 0px -21px;
+}
+
+#gift:hover, .btnHover {
+    width: 23px;
+    height: 3px;
+    background: url("../image/top_nav_txt.png") 0px 0px;
+}
+
+#event {
+    width: 23px;
+    height: 10px;
+    background: url("../image/top_nav_txt.png") -43px -21px;
+}
+
+#event:hover, .btnHover {
+    width: 23px;
+    height: 3px;
+    background: url("../image/top_nav_txt.png") -42px 0px;
+}
+
+#story {
+    width: 23px;
+    height: 10px;
+    background: url("../image/top_nav_txt.png") -85px -21px;
+}
+
+#story:hover, .btnHover {
+    width: 23px;
+    height: 3px;
+    background: url("../image/top_nav_txt.png") -85px 0px;
+}
+
+/*添加一场信息弹窗*/
+#err{
+    position: fixed;
+    width: 500px;
+    height: 300px;
+    text-align: center;
+    background: rgba(0,0,0,0.7);
+    left: 600px;
+    top: 300px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    color: red;
+    font-size: 20px;
+    font-weight: 700;
+    padding-top: 50px;
+}
+
+#err>p{
+    margin: 0 auto;
+    margin-bottom: 50px;
+}

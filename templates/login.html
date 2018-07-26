@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta Author="hero">
+    <meta time=[[$]]>
+    <meta E_meil="gmclqb@163.com">
+    <title>踏上成神之路</title>
+    <link rel="stylesheet" href="/static/css/taiji.css">
+    <link rel="stylesheet" href="/static/css/css_footer_001.css">
+    <link rel="stylesheet" href="/static/css/login_css_01.css">
+    <link rel="stylesheet" href="/static/css/audio_css.css">
+</head>
+<body>
+<h1 align="center">踏上成神之路</h1>
+
+<!-- 背景音乐 -->
+<audio controls="controls" loop="loop" preload="auto"
+       src="{{ url_for("static",filename="music/background_music.mp3") }}">
+    你的浏览器不支持audio标签
+</audio>
+<form action="login" method="post">
+    <ul>
+        <!-- 用户名 ： 用户名输入框  创建用户按钮 -->
+        <li>
+            <span class="title">用户名</span>
+            <span><input class="input_box" type="text" name="username" maxlength="20"
+                         placeholder="{{ username }}"></span>
+            <span><a href="register" class="button_a">创建用户</a></span>
+        </li>
+        <!-- 密码 ：密码输入框 忘记密码 -->
+        <li>
+            <span class="title">密码</span>
+            <span>
+                {% if pass_err %}
+                    <input class="input_box" type="password" name="userpasswd" maxlength="20"
+                           placeholder="{{ pass_err }}">
+                {% else %}
+                    <input class="input_box" type="password" name="userpasswd" maxlength="20"
+                           placeholder="输入10～20位字母数字下划线">
+                {% endif %}
+            </span>
+            <span>
+                <a href="#" class="button_a">找回密码</a>
+            </span>
+        </li>
+        <!-- 有时间可以加一个验证码的功能 目前没有 -->
+        <!-- 登录按钮 -->
+        <li>
+            <span class="title"></span>
+            <span>
+                <input type="submit" class="button" value="登录">
+            </span>
+            <span></span>
+        </li>
+    </ul>
+</form>
+
+<div align="center" id="footer">
+    <p align="center">
+        版权所有&copy;萌萌哒第二小分队 达内集团13教室
+    </p>
+    <p>
+        <span><a href="#">联系我们</a></span>
+        <span><a href="#">支持正版</a></span>
+        <span><a href="#">打赏充值</a></span>
+        <span><a href="#">广告支持</a></span>
+    </p>
+</div>
+<div name="taiji" id="taiji">
+    <div id="taiji-1-wilte"></div>
+    <div id="taiji-1-black"></div>
+    <div id="taiji-2-wilte"></div>
+    <div id="taiji-2-black"></div>
+    <div id="taiji-3-wilte"></div>
+    <div id="taiji-3-black"></div>
+</div>
+</body>
+</html>

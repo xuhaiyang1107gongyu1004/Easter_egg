@@ -1,0 +1,656 @@
+/* 四个背景图 */
+.bg {
+    float: left;
+    width: 1920px;
+}
+input[type='radio']{
+    opacity:0;
+}
+
+#d0 {
+    top: 5px;
+    left: 65px;
+    position: absolute;
+}
+
+/* 设置中间的三个矿源 */
+#d2 {
+    width: 356px;
+    height: 299px;
+    background: url("../image/sources.png") -50px -46px;
+    position: absolute;
+    top: 340px;
+    left: 443px;
+}
+
+/* 点击时换成另一张图片 */
+#d2:hover {
+    width: 426px;
+    height: 364px;
+    background: url("../image/sources.png") -510px -30px;
+    position: absolute;
+    top: 300px;
+    left: 400px;
+}
+
+/*添加d2 被选中时的样式*/
+#d2_forlabel:checked + #d2 {
+    width: 426px;
+    height: 364px;
+    background: url("../image/sources.png") -510px -30px;
+    position: absolute;
+    top: 300px;
+    left: 400px;
+}
+
+#d3 {
+    width: 382px;
+    height: 277px;
+    background: url("../image/sources.png") -27px -449px;
+    position: absolute;
+    top: 285px;
+    left: 750px;
+}
+
+#d3:hover {
+    width: 426px;
+    height: 364px;
+    background: url("../image/sources.png") -519px -404px;
+    position: absolute;
+    top: 207px;
+    left: 742.5px;
+}
+
+#d3_forlabel:checked + #d3 {
+    width: 426px;
+    height: 364px;
+    background: url("../image/sources.png") -519px -404px;
+    position: absolute;
+    top: 207px;
+    left: 742.5px;
+}
+
+#d4 {
+    width: 316px;
+    height: 320px;
+    background: url("../image/sources.png") -55px -821px;
+    position: absolute;
+    top: 370px;
+    left: 1113.5px;
+}
+
+#d4:hover {
+    width: 426px;
+    height: 364px;
+    background: url("../image/sources.png") -476px -792px;
+    position: absolute;
+    top: 335px;
+    left: 1055px;
+}
+
+#d4_forlabel:checked + #d4 {
+    width: 426px;
+    height: 364px;
+    background: url("../image/sources.png") -476px -792px;
+    position: absolute;
+    top: 335px;
+    left: 1055px;
+}
+
+/* 三个矿源上的小锤子 */
+#d5 {
+    position: absolute;
+    top: 550px;
+    left: 560px;
+}
+
+#d6 {
+    position: absolute;
+    top: 490px;
+    left: 820px;
+}
+
+#d7 {
+    position: absolute;
+    top: 610px;
+    left: 1150px;
+}
+
+#d01 {
+    left: -60px;
+    top: 40px;
+    position: absolute;
+
+}
+
+#monty01 {
+    position: absolute;
+}
+
+#monty02 {
+    position: absolute;
+}
+
+#monty03 {
+    position: absolute;
+}
+
+/* 三个矿源下面的方框 */
+#d8 {
+    position: absolute;
+    top: 650px;
+    left: 560px;
+}
+
+/* 矿锄的类型 */
+#d9 {
+    position: absolute;
+    top: 710px;
+    left: 665px;
+}
+
+#d9-1 {
+    width: 120px;
+    height: 20px;
+    position: absolute;
+    top: 95px;
+    color: rgb(255, 199, 31);
+}
+
+#d9-2 {
+    width: 120px;
+    height: 20px;
+    position: absolute;
+    top: 120px;
+    color: rgb(255, 255, 255);
+}
+
+#d9-3 {
+    width: 120px;
+    height: 20px;
+    position: absolute;
+    font-size: 17px;
+    color: rgb(255, 199, 31);
+}
+
+#d10 {
+    position: absolute;
+    top: 710px;
+    left: 785px;
+}
+
+#d10-1 {
+    width: 120px;
+    height: 20px;
+    position: absolute;
+    top: 95px;
+    color: rgb(255, 199, 31);
+}
+
+#d10-2 {
+    width: 120px;
+    height: 20px;
+    position: absolute;
+    top: 120px;
+    color: rgb(255, 255, 255);
+}
+
+#d10-3 {
+    width: 120px;
+    height: 20px;
+    position: absolute;
+    font-size: 17px;
+    color: rgb(255, 199, 31);
+}
+
+#d11 {
+    position: absolute;
+    top: 710px;
+    left: 905px;
+}
+
+#d11-1 {
+    width: 120px;
+    height: 20px;
+    position: absolute;
+    top: 95px;
+    color: rgb(255, 199, 31);
+}
+
+#d11-2 {
+    width: 120px;
+    height: 20px;
+    position: absolute;
+    top: 120px;
+    color: rgb(255, 255, 255);
+}
+
+#d11-3 {
+    width: 120px;
+    height: 20px;
+    position: absolute;
+    font-size: 17px;
+    color: rgb(255, 199, 31);
+}
+
+#d12 {
+    position: absolute;
+    top: 710px;
+    left: 1025px;
+}
+
+#d12-1 {
+    width: 120px;
+    height: 20px;
+    position: absolute;
+    top: 95px;
+    color: rgb(255, 199, 31);
+}
+
+#d12-2 {
+    width: 120px;
+    height: 20px;
+    position: absolute;
+    top: 120px;
+    color: rgb(255, 255, 255);
+}
+
+#d12-3 {
+    width: 120px;
+    height: 20px;
+    position: absolute;
+    font-size: 17px;
+    color: rgb(255, 199, 31);
+}
+
+#d13 {
+    position: absolute;
+    top: 710px;
+    left: 1145px;
+}
+
+#d13-1 {
+    width: 120px;
+    height: 20px;
+    position: absolute;
+    top: 95px;
+    color: rgb(255, 199, 31);
+}
+
+#d13-2 {
+    width: 120px;
+    height: 20px;
+    position: absolute;
+    top: 120px;
+    color: rgb(255, 255, 255);
+}
+
+#d13-3 {
+    width: 120px;
+    height: 20px;
+    position: absolute;
+    font-size: 17px;
+    color: rgb(255, 199, 31);
+}
+
+#d14 {
+    position: absolute;
+    top: 710px;
+    left: 1265px;
+}
+
+#d14-1 {
+    width: 120px;
+    height: 20px;
+    position: absolute;
+    top: 95px;
+    color: rgb(255, 199, 31);
+}
+
+#d14-2 {
+    width: 120px;
+    height: 20px;
+    position: absolute;
+    top: 120px;
+    color: rgb(255, 255, 255);
+}
+
+#d14-3 {
+    width: 120px;
+    height: 20px;
+    position: absolute;
+    font-size: 17px;
+    color: rgb(255, 199, 31);
+}
+
+#d15 {
+    position: absolute;
+    top: 800px;
+    left: 1385px;
+}
+
+#d15-1 {
+    position: absolute;
+    font-size: 20px;
+    color: rgb(206, 131, 69);
+    left: 800px;
+    top: 1350px;
+    font-family: "微软雅黑";
+}
+
+#d15-1 > span {
+    width: 200px;
+    position: absolute;
+    font-size: 20px;
+    color: rgb(206, 131, 69);
+    left: 600px;
+    top: -620px;
+}
+
+/* 秘境矿源 */
+#d16 {
+    width: 112px;
+    height: 110px;
+    background: url("../image/tag_bg.png") -725px -130px;
+    position: absolute;
+    top: 125px;
+    right: 600px;
+}
+
+/* 锻造大厅 */
+#dzdt_torbar_KS {
+    width: 112px;
+    height: 110px;
+    background: url("../image/tag_bg.png") -124px -7px;
+    position: absolute;
+    top: 120px;
+    right: 460px;
+}
+
+#dzdt_torbar_KS:hover {
+    width: 112px;
+    height: 110px;
+    background: url("../image/tag_bg.png") -123px -126px;
+    position: absolute;
+    top: 120px;
+    right: 460px;
+}
+
+/* 锻造商城 */
+#shop_torbar_KS {
+    width: 112px;
+    height: 110px;
+    background: url("../image/tag_bg.png") -5px -6px;
+    position: absolute;
+    top: 120px;
+    right: 320px;
+}
+
+#shop_torbar_KS:hover {
+    width: 112px;
+    height: 110px;
+    background: url("../image/tag_bg.png") -5px -130px;
+    position: absolute;
+    top: 120px;
+    right: 320px;
+}
+
+/*各种工具*/
+
+#d19 {
+    position: absolute;
+    top: 735px;
+    left: 685px;
+}
+
+#d19_bg {
+    position: absolute;
+    left: -1px;
+    top: -1px;
+    width: 63px;
+    height: 57px;
+    background: url("../image/tool_sprite.png") -10px -315px;
+}
+
+#d9-1_forlabel:checked + #d19_bg {
+    position: absolute;
+    left: -10px;
+    top: -13px;
+    width: 86px;
+    height: 81px;
+    background: url("../image/tool_sprite.png") -0px -393px;
+    box-shadow: 0 0 5px 5px orange;
+}
+
+#d20 {
+    position: absolute;
+    top: 735px;
+    left: 810px;
+}
+
+#d10_bg {
+    position: absolute;
+    left: -1px;
+    top: -1px;
+    width: 62px;
+    height: 59px;
+    background: url("../image/tool_sprite.png") -113px -314px;
+}
+
+#d10-1_forlabel:checked + #d10_bg {
+    position: absolute;
+    left: -14px;
+    top: -13px;
+    width: 86px;
+    height: 81px;
+    background: url("../image/tool_sprite.png") -95px -395px;
+    box-shadow: 0 0 5px 5px orange;
+}
+
+#d21 {
+    position: absolute;
+    top: 735px;
+    left: 930px;
+}
+
+#d11_bg {
+    position: absolute;
+    left:-1px;
+    top:-1px;
+    width: 58px;
+    height: 59px;
+    background: url("../image/tool_sprite.png") -220px -313px;
+}
+
+#d11-1_forlabel:checked + #d11_bg {
+    box-shadow: 0 0 5px 5px orange;;
+    position: absolute;
+    left: -14px;
+    top: -13px;
+    width: 86px;
+    height: 81px;
+    background: url("../image/tool_sprite.png") -192px -393px;
+}
+
+#d22 {
+    position: absolute;
+    top: 732px;
+    left: 1050px;
+}
+
+#d12_bg {
+    position: absolute;
+    left: -1px;
+    top: -1px;
+    width: 55px;
+    height: 63px;
+    background: url("../image/tool_sprite.png") -319px -312px;
+}
+
+#d12-1_forlabel:checked + #d12_bg {
+    box-shadow: 0 0 5px 5px orange;;
+    position: absolute;
+    left: -14px;
+    top: -13px;
+    width: 86px;
+    height: 81px;
+    background: url("../image/tool_sprite.png") -288px -393px;
+}
+#d23 {
+    position: absolute;
+    top: 732px;
+    left: 1170px;
+}
+
+#d13_bg {
+    position: absolute;
+    left: -1px;
+    top: -1px;
+    width: 61px;
+    height: 62px;
+    background: url("../image/tool_sprite.png") -416px -312px;
+}
+
+#d13-1_forlabel:checked + #d13_bg {
+    box-shadow: 0 0 5px 5px orange;;
+    position: absolute;
+    left: -14px;
+    top: -13px;
+    width: 86px;
+    height: 81px;
+    background: url("../image/tool_sprite.png") -379px -393px;
+}
+#d24 {
+    position: absolute;
+    top: 732px;
+    left: 1285px;
+}
+
+#d14_bg {
+    position: absolute;
+    left:-1px;
+    top: -1px;
+    width: 69px;
+    height: 62px;
+    background: url("../image/tool_sprite.png") -513px -314px;
+}
+#d14-1_forlabel:checked + #d14_bg {
+    box-shadow: 0 0 5px 5px orange;;
+    position: absolute;
+    left: -10px;
+    top: -10px;
+    width: 86px;
+    height: 81px;
+    background: url("../image/tool_sprite.png") -478px -393px;
+}
+
+#d19-1 {
+    text-align: center;
+    width: 108px;
+    height: 108px;
+    position: absolute;
+    top: -22px;
+    left: -18px;
+    background: url("../image/columns_shade.png") 50% 50% no-repeat;
+    font-size: 20px;
+    color: rgb(206, 131, 69);
+    line-height: 108px;
+    font-family: "微软雅黑";
+    visibility: hidden;
+}
+
+#d19-2 {
+    text-align: center;
+    width: 108px;
+    height: 108px;
+    position: absolute;
+    top: -23px;
+    left: -25px;
+    background: url("../image/columns_shade.png") 50% 50% no-repeat;
+    font-size: 20px;
+    color: rgb(206, 131, 69);
+    line-height: 108px;
+    font-family: "微软雅黑";
+    visibility: hidden;
+}
+
+#d19-3 {
+    text-align: center;
+    width: 108px;
+    height: 108px;
+    position: absolute;
+    top: -23px;
+    left: -25px;
+    background: url("../image/columns_shade.png") 50% 50% no-repeat;
+    font-size: 20px;
+    color: rgb(206, 131, 69);
+    line-height: 108px;
+    font-family: "微软雅黑";
+    visibility: hidden;
+}
+
+#d19-4 {
+    text-align: center;
+    width: 108px;
+    height: 108px;
+    position: absolute;
+    top: -23px;
+    left: -25px;
+    background: url("../image/columns_shade.png") 50% 50% no-repeat;
+    font-size: 20px;
+    color: rgb(206, 131, 69);
+    line-height: 108px;
+    font-family: "微软雅黑";
+    visibility: hidden;
+}
+
+#d19-5 {
+    text-align: center;
+    width: 108px;
+    height: 108px;
+    position: absolute;
+    top: -23px;
+    left: -25px;
+    background: url("../image/columns_shade.png") 50% 50% no-repeat;
+    font-size: 20px;
+    color: rgb(206, 131, 69);
+    line-height: 108px;
+    font-family: "微软雅黑";
+    visibility: hidden;
+}
+
+#d19-6 {
+    text-align: center;
+    width: 108px;
+    height: 108px;
+    position: absolute;
+    top: -23px;
+    left: -22px;
+    background: url("../image/columns_shade.png") 50% 50% no-repeat;
+    font-size: 20px;
+    color: rgb(206, 131, 69);
+    line-height: 108px;
+    font-family: "微软雅黑";
+    visibility: hidden;
+}
+
+/*重写矿源秘境样式。当前页面标签被选中重写矿源秘境样式*/
+#kymj {
+    width: 219px;
+    height: 84px;
+    background: url("../image/menu_bg.png") -210px -499px;
+}
+
+
+/*矿山挖掘倒计时*/
+.workTime{
+    width: 150px;
+    height: 50px;
+    font-size: 15px;
+    line-height: 20px;
+    text-align: center;
+    color: orange;
+    font-family: '微软雅黑';
+    background: rgba(0,0,0,0.4);
+    border-radius: 5px;
+}

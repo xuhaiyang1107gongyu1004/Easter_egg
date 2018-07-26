@@ -1,0 +1,145 @@
+body, h1, h2, h3, h4, h5, h6, p, ul, ol, div {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: url("../image/bg_login_04.jpeg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+h1 {
+    color: #555555;
+    border: none;
+    border-bottom: 2px solid #ccc;
+    padding: 50px 0px;
+    font-family:"微软雅黑";
+}
+
+/*先写布局*/
+body > form > ul {
+    width: 800px;
+    list-style: none;
+    margin-left: 100px;
+    margin-top: 80px;
+
+}
+
+/*每行给20px的下外边距*/
+form>ul>li{
+    margin-bottom: 15px;
+    /*给所有的行元素增加透明效果*/
+    opacity: 0.9;
+}
+
+/*设置指定元素的样式*/
+/*设置列表首列样式*/
+.title{
+    display: inline-block;
+    width: 100px;
+    text-align: right;
+    font-family: Ubuntu;
+}
+
+/*设置input框的样式*/
+form>ul>li>span>input{
+    /*去掉外边框，设置内边距 设置做外边距，设置边框颜色 设置尺寸 圆角 设置焦点样式*/
+    outline:none;
+    padding-left: 20px;
+    margin-left: 30px;
+    margin-bottom: 10px;
+    border: 1px solid #cccccc;
+    width: 300px;
+    height: 40px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+}
+
+form>ul>li>span>input:focus{
+    box-shadow:0 0 5px 5px #555555;
+}
+
+/*设置input框后 超链接a的样式*/
+form>ul>li>span>a{
+    /*去掉下划线， 设置字体颜色 设置边框 设置背景色 字号 字体*/
+    text-decoration: none;
+    color: #555555;
+    height: 40px;
+    border: 2px dotted #cccccc;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    background: #f1f1f1;
+    font-size: 20px;
+    font-family:"微软雅黑";
+    margin-left: 20px;
+}
+
+form>ul>li>span>a:hover{
+    border-color: #555;
+    background: #a1a1a1;
+}
+
+/*设置 提交按钮样式*/
+.button{
+    outline:none;
+    padding-left: 20px;
+    margin-left: 30px;
+    margin-bottom: 10px;
+    border: 1px solid #cccccc;
+    width: 300px;
+    height: 40px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    font-size: 26px;
+}
+
+.button:hover{
+    background: #f1f1f1;
+    transform: translate(2px,2px)
+}
+
+.button:active{
+    transform: scale(1.1,1.1)
+}
+
+
+/* 注册页面输入框背后的文字增加一个底框*/
+.text{
+    background: #cccccc;
+    width: 250px;
+    height: 40px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    font-family: "微软雅黑";
+    display:inline-block;
+    line-height: 40px;
+    margin:0;
+    margin-left: 20px;
+    padding-left: 20px;
+    opacity: 0.5;
+}
+
+
+#taiji {
+    position: absolute;
+    left: 70%;
+    top: 30%;
+}
+
+#footer {
+    position: absolute;
+    bottom: 10%;
+    left: 35%;
+}

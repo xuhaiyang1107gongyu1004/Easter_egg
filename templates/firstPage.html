@@ -1,0 +1,161 @@
+{% extends "main.html" %}
+{% block title %}矿源秘境{% endblock %}
+{% block head %}
+    {{ super() }}
+    <link rel="stylesheet" href="{{ url_for("static",filename="css/firstPage.css") }}">
+    <script src="{{ url_for("static",filename="__js/firstPage.js") }}"></script>
+{% endblock %}
+{% block content %}
+
+    {#    <div id='main'>#}
+    <!-- 整个页面的div -->
+    <div><img class='bg' src="{{ url_for("static",filename="image/mineral_bg1.jpg") }}"></div>
+    <div><img class='bg' src="{{ url_for("static",filename="image/mineral_bg2.jpg") }}"></div>
+    <div><img class='bg' src="{{ url_for("static",filename="image/mineral_bg3.jpg") }}"></div>
+    <div><img class='bg' src="{{ url_for("static",filename="image/mineral_bg4.jpg") }}"></div>
+    <form action="KS" method="post">
+        <!-- 中间的三个矿源加点击时更换另一张图片-->
+        <input type="hidden" value="{{ userid }}">
+        <div id="d0">
+            <div id="monty01">
+                <!-- 增加了点击的状态 -->
+                <input type="radio" name="monty" id="d2_forlabel" class="radio" value="1">
+                <!-- 矿山的照片 -->
+                <label for="d2_forlabel" id="d2"></label>
+                <div id='d5'>
+                    {% if monty.monty["1"] %}
+                        {% if monty.monty["1"] > 0 %}
+                            <p class="workTime">剩余时间：{{ monty.monty["1"] }}</p>
+                        {% else %}
+                            <img src="{{ url_for("static",filename="image/bar_wait.png") }}">
+                        {% endif %}
+                    {% else %}
+                        <img src="{{ url_for("static",filename="image/bar_wait.png") }}">
+                    {% endif %}
+                </div>
+            </div>
+            <div id="monty02">
+                <input type="radio" name="monty" id='d3_forlabel' class="radio" value="2">
+                <label for="d3_forlabel" id="d3"></label>
+                <div id='d6'>
+                    {% if monty.monty["2"] %}
+                        {% if monty.monty["2"] >0 %}
+                            <p class="workTime">剩余时间：{{ monty.monty["2"] }}</p>
+                        {% else %}
+                            <img src="{{ url_for("static",filename="image/bar_wait.png") }}">
+                        {% endif %}
+                    {% else %}
+                        <img src="{{ url_for("static",filename="image/bar_wait.png") }}">
+                    {% endif %}
+                </div>
+            </div>
+            <div id="monty03">
+                <input type="radio" name="monty" id='d4_forlabel' class="radio" value="3">
+                <label for="d4_forlabel" id="d4"></label>
+                <div id='d7'>
+                    {% if monty.monty["3"] %}
+                        {% if monty.monty["3"] >0 %}
+                            <p class="workTime">剩余时间：{{ monty.monty["3"] }}</p>
+                        {% else %}
+                            <img src="{{ url_for("static",filename="image/bar_wait.png") }}">
+                        {% endif %}
+                    {% else %}
+                        <img src="{{ url_for("static",filename="image/bar_wait.png") }}">
+                    {% endif %}
+                </div>
+            </div>
+        </div>
+
+        <div id="d01">
+            <!-- 矿源下面的矿锄图 -->
+            <div><img id='d8' src="{{ url_for("static",filename="image/column_bg.png") }}"></div>
+            <!-- 矿锄的类型 -->
+            <div><img id='d9' src="{{ url_for("static",filename="image/columns_pic_bg.png") }}">
+                <div id='d19'>
+                    <div id="d19-1">未拥有</div>
+                    <input type="radio" name="tool_sprit" value="{{ tool_sprit[0].itemId }}" id="d9-1_forlabel">
+                    <label for="d9-1_forlabel" id="d19_bg"></label>
+                    <div id="d9-1">{{ tool_sprit[0].itemName }}</div>
+                    <div id="d9-2">库存&nbsp;&nbsp;:
+                        <span id="d9-3">{{ tool_sprit[0].itemNum }}</span></div>
+
+                </div>
+            </div>
+            <div><img id='d10' src="{{ url_for("static",filename="image/columns_pic_bg.png") }}">
+                <div id='d20'>
+                    <div id="d19-2">未拥有</div>
+                    <input type="radio" name="tool_sprit" value="{{ tool_sprit[1].itemId }}" id="d10-1_forlabel">
+                    <label for="d10-1_forlabel" id="d10_bg"></label>
+                    <div id="d10-1">{{ tool_sprit[1].itemName }}</div>
+                    <div id="d10-2">库存&nbsp;&nbsp;:
+                        <span id="d10-3">&nbsp;{{ tool_sprit[1].itemNum }}</span></div>
+
+                </div>
+            </div>
+            <div><img id='d11' src="{{ url_for("static",filename="image/columns_pic_bg.png") }}">
+                <div id="d21">
+                    <div id="d19-3">未拥有</div>
+                    <input type="radio" name="tool_sprit" value="{{ tool_sprit[2].itemId }}" id="d11-1_forlabel">
+                    <label for="d11-1_forlabel" id="d11_bg"></label>
+                    <div id="d11-1">{{ tool_sprit[2].itemName }}</div>
+                    <div id="d11-2">库存&nbsp;&nbsp;:
+                        <span id="d11-3">&nbsp;{{ tool_sprit[2].itemNum }}</span></div>
+
+                </div>
+            </div>
+            <div><img id='d12' src="{{ url_for("static",filename="image/columns_pic_bg.png") }}">
+                <div id="d22">
+                    <div id="d19-4">未拥有</div>
+                    <input type="radio" name="tool_sprit" value="{{ tool_sprit[3].itemId }}" id="d12-1_forlabel">
+                    <label for="d12-1_forlabel" id="d12_bg"></label>
+                    <div id="d12-1">{{ tool_sprit[3].itemName }}</div>
+                    <div id="d12-2">库存&nbsp;&nbsp;:
+                        <span id="d12-3">&nbsp;{{ tool_sprit[3].itemNum }}</span></div>
+
+                </div>
+            </div>
+            <div><img id='d13' src="{{ url_for("static",filename="image/columns_pic_bg.png") }}">
+                <div id="d23">
+                    <div id="d19-5">未拥有</div>
+                    <input type="radio" name="tool_sprit" value="{{ tool_sprit[4].itemId }}" id="d13-1_forlabel">
+                    <label for="d13-1_forlabel" id="d13_bg"></label>
+                    <div id="d13-1">{{ tool_sprit[4].itemName }}</div>
+                    <div id="d13-2">库存&nbsp;&nbsp;:
+                        <span id="d13-3">&nbsp;{{ tool_sprit[4].itemNum }}</span></div>
+
+                </div>
+            </div>
+            <div><img id='d14' src="{{ url_for("static",filename="image/columns_pic_bg.png") }}">
+                <div id="d24">
+                    <div id="d19-6">未拥有</div>
+                    <input type="radio" name="tool_sprit" value="{{ tool_sprit[5].itemId }}" id="d14-1_forlabel">
+                    <label for="d14-1_forlabel" id="d14_bg"></label>
+                    <div id="d14-1">{{ tool_sprit[5].itemName }}</div>
+                    <div id="d14-2">库存&nbsp;&nbsp;:
+                        <span id="d14-3">&nbsp;{{ tool_sprit[5].itemNum }}</span></div>
+
+                </div>
+            </div>
+
+
+            <!-- 开始挖矿图片 -->
+            <div id="d15-1"><span>您还没有</br>挖矿道具</span></div>
+            <button type="submit"><img id='d15' src="{{ url_for("static",filename="image/btn_none.png") }}">
+            </button>
+            <div>
+            </div>
+        </div>
+    </form>
+    <div>
+        <!-- 矿源秘境 -->
+        <div id='d16'></div>
+        <!-- 锻造大厅 -->
+        <div id='dzdt_torbar_KS' onclick="leftBarClickSrc(this)"></div>
+        <!-- 锻造商城 -->
+        <div id='shop_torbar_KS' onclick="leftBarClickSrc(this)"></div>
+    </div>
+
+
+
+    {#    </div>#}
+{% endblock %}

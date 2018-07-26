@@ -1,0 +1,487 @@
+/*body{*/
+	/*overflow-x: hidden;*/
+	/*margin:0 0;*/
+/*}*/
+#s{
+	left: 35px;
+	top:56px;
+	position:absolute;
+}
+.d12-1{
+	position:absolute;
+	width:140px;
+	height:200px;
+	opacity:0.7;
+	z-index:5;
+	display:none;
+	color:black;
+	text-align:left;
+	font-weight:bold;
+	font-size:14px;
+	border-radius:10px;
+	border:3px solid rgba(255,255,255,0.1);
+	background:#FF5500;
+	}
+/*灰色背景*/
+.div0{
+	background-color:rgba(0,0,0,0.6);
+	left:0px;
+	top:10px;
+	position:fixed;
+	width:1920px;
+	height:939px;
+	z-index:999;
+}
+.div1{
+		background:url("../image/fc_normal.png");
+		z-index:6;
+		width:550px;
+		height:369px;
+		position:fixed;
+		top:220px;
+		left:655px;
+		font-weight:bold;
+		font-size:22px;
+		line-height:300px;
+		color:red;
+		text-align:center;
+}	
+.div2{
+	background:url("../image/buy.png");
+	width:130px;
+	height:30px;
+	position:absolute;
+	left:865px;
+	top:221px;
+	z-index: 88;
+}
+.div3{
+	position:absolute;
+	width:92px;
+	height:37px;
+	z-index: 88;
+	background:url("../image/fc_sprite.png")-115px -2px;
+	top:512px;
+	left:800px;
+}
+.div4{
+	position:absolute;
+	width:89px;
+	height:33px;
+	background:url("../image/fc_sprite.png")0px -63px;
+	top:512px;
+	left:955px;
+	z-index: 200;
+}
+/* 四个背景图 */
+.bg{
+	float:left;
+	width: 1920px;
+	height:259px;
+}
+/* 秘境矿源 */
+#kymj_torbar_shop{
+	width:104px;
+	height:104px;
+	background:url("../image/tag_bg.png") -728px -14px;
+	position:absolute;
+	top:110px;
+	right:520px;
+	z-index:1;
+}
+#kymj_torbar_shop:hover{
+	width:111px;
+	height:102px;
+	background:url("../image/tag_bg.png") -724px -132px;
+	position:absolute;
+	top:110px;
+	right:517px;
+}
+/* 锻造大厅 */
+#dzdt_torbar_shop{
+	width:104px;
+	height:105px;
+	background:url("../image/tag_bg.png") -127px -7px;
+	position:absolute;
+	top:100px;
+	right:400px;
+	z-index: 1;
+}
+#dzdt_torbar_shop:hover{
+	width:113px;
+	height:102px;
+	background:url("../image/tag_bg.png") -124px -131px;
+	position:absolute;
+	top:104px;
+	right:395px;
+}
+/* 锻造商城 */
+#d3{
+	width:109px;
+	height:107px;
+	background:url("../image/tag_bg.png") -7px -131px;
+	position:absolute;
+	top:100px;
+	right:280px;
+}
+/* 锻造商城的框图 */
+#d4{
+	position:absolute;
+	top:170px;
+	left:380px;
+}
+/* 框图下面的锤子 */
+#d6{
+	width:271px;
+	height:202px;
+	background:url("../image/front_hammer.png") -19px -2px;
+	position:absolute;
+	left:314px;
+	top:721px;
+	z-index:5;
+}
+/* 最右边的火炉 */
+#d7{
+	position:absolute;
+	left:1350px;
+	top:350px;
+}
+/* 道具 */
+#d8{
+	position:absolute;
+	top:200px;
+	left:500px;
+}
+/* 矿石 */
+#d9{
+	position:absolute;
+	top:200px;
+	left:610px;
+}
+/* 锻造商城 */
+#d10{
+	position:absolute;
+	top:186px;
+	left:812px;
+	background:url("../image/chunk_title.png")-207px -3px;
+	width:209px;
+	height:47px;
+}
+#d11{
+	position:absolute;
+	left:464px;
+	top:263px;
+}
+/* 挖矿工具 */
+/* 黑铁钎 */
+#d12{
+	width:139px;
+	height:144px;
+	background:url("../image/tool_sprite.png")-13px 0px;
+	position:absolute;
+	left:505px;
+	top:302px;
+}
+#d12:hover{
+	width:146px;
+	height:140px;
+	background:url("../image/tool_sprite.png")-11px -157px;
+	position:absolute;
+	left:502px;
+	top:308px;
+}
+#d18{
+	width:67px;
+	height:27px;
+	background:url("../image/btn_sprite.png")-370px -129px;
+	position:absolute;
+	top:275px;
+	left:476px;
+}
+#d24{
+	width:20px;
+	height:20px;
+	background:url("../image/stone_sprite.png")-288px -423px;
+	position:absolute;
+	top:281px;
+	left:598px;
+		
+}
+#sp1{
+	position:absolute;
+	left:640px;
+	top:281px;
+	font-weight: bold;
+	font-size:14px;
+	color:#ffdda6;
+}
+/* 十字镐 */
+#d13{
+	width:108px;
+	height:132px;
+	background:url("../image/tool_sprite.png")-215px -10px;
+	position:absolute;
+	left:760px;
+	top:302px;
+}
+#d13:hover{
+	width:113px;
+	height:138px;
+	background:url("../image/tool_sprite.png")-212px -157px;
+	position:absolute;
+	left:756px;
+	top:298px;
+}
+#d19{
+	width:68px;
+	height:26px;
+	background:url("../image/btn_sprite.png")-292px -130px;
+	position:absolute;
+	top:275px;
+	left:712px;
+
+}
+#d25{
+	width:20px;
+	height:20px;
+	top:278px;
+	left:839px;
+	background:url("../image/stone_sprite.png")-288px -423px;
+	position:absolute;
+	font-size:14px;
+	color:#ffdda6;
+	font-weight:bold;
+}
+#sp2{
+	position:absolute;
+	left:872px;
+	top:278px;
+	font-weight: bold;
+	font-size:14px;
+	color:#ffdda6;
+}
+/* 鹤嘴锄 */
+#d14{
+	width:117px;
+	height:131px;
+	background:url("../image/tool_sprite.png")-393px -9px;
+	position:absolute;
+	left:985px;
+	top:302px;
+}
+#d14:hover{
+	width:123px;
+	height:139px;
+	background:url("../image/tool_sprite.png")-390px -157px;
+	position:absolute;
+	left:982px;
+	top:299px;
+}
+#d20{
+	width:68px;
+	height:25px;
+	background:url("../image/btn_sprite.png")-214px -131px;
+	position:absolute;
+	top:275px;
+	left:948px;
+}
+#d26{
+	width:20px;
+	height:20px;
+	top:278px;
+	left:1073px;
+	background:url("../image/stone_sprite.png")-288px -423px;
+	position:absolute;
+	font-size:14px;
+	color:#ffdda6;
+	font-weight:bold;
+}
+#sp3{
+	position:absolute;
+	left:1107px;
+	top:278px;
+	font-weight: bold;
+	font-size:14px;
+	color:#ffdda6;
+}
+/* 祝融锤 */
+#d15{
+	width:122px;
+	height:135px;
+	background:url("../image/tool_sprite.png")-574px -8px;
+	position:absolute;
+	left:1215px;
+	top:302px;
+}
+#d15:hover{
+	width:127px;
+	height:142px;
+	background:url("../image/tool_sprite.png")-571px -155px;
+	position:absolute;
+	left:1211px;
+	top:299px;
+}
+#d21{
+	width:66px;
+	height:25px;
+	background:url("../image/btn_sprite.png")-450px -131px;
+	position:absolute;
+	top:275px;
+	left:1182px;
+}
+#d27{
+	width:20px;
+	height:20px;
+	top:278px;
+	left:1307px;
+	background:url("../image/stone_sprite.png")-288px -423px;
+	position:absolute;
+	font-size:14px;
+	color:#ffdda6;
+	font-weight:bold;
+}
+#sp4{
+	position:absolute;
+	left:1340px;
+	top:278px;
+	font-weight: bold;
+	font-size:14px;
+	color:#ffdda6;
+}
+/* 轩辕铲 */
+#d16{
+	width:137px;
+	height:134px;
+	background:url("../image/tool_sprite.png")-753px -8px;
+	position:absolute;
+	left:515px;
+	top:545px;
+}
+#d16:hover{
+	width:144px;
+	height:139px;
+	background:url("../image/tool_sprite.png")-748px -157px;
+	position:absolute;
+	left:509px;
+	top:542px;
+}
+#d22{
+	width:68px;
+	height:28px;
+	background:url("../image/btn_sprite.png")-527px -128px;
+	position:absolute;
+	top:504px;
+	left:480px;
+}
+#d28{
+	width:20px;
+	height:20px;
+	top:513px;
+	left:598px;
+	background:url("../image/stone_sprite.png")-288px -423px;
+	position:absolute;
+	font-size:14px;
+	color:#ffdda6;
+	font-weight:bold;
+}
+#sp5{
+	position:absolute;
+	left:640px;
+	top:513px;
+	font-weight: bold;
+	font-size:14px;
+	color:#ffdda6;
+}
+/* 挖掘机 */
+#d17{
+	width:151px;
+	height:136px;
+	background:url("../image/tool_sprite.png")-930px -9px;
+	position:absolute;
+	left:735px;
+	top:545px;
+}
+#d17:hover{
+	width:159px;
+	height:146px;
+	background:url("../image/tool_sprite.png")-927px -155px;
+	position:absolute;
+	left:733px;
+	top:540px;
+}
+#d23{
+	width:69px;
+	height:28px;
+	background:url("../image/btn_sprite.png")-605px -128px;
+	position:absolute;
+	top:504px;
+	left:715px;
+}
+#d29{
+	width:20px;
+	height:20px;
+	top:513px;
+	left:837px;
+	background:url("../image/stone_sprite.png")-288px -423px;
+	position:absolute;
+	font-size:14px;
+	color:#ffdda6;
+	font-weight:bold;
+}
+#sp6{
+	position:absolute;
+	left:871px;
+	top:513px;
+	font-weight: bold;
+	font-size:14px;
+	color:#ffdda6;
+}
+/* 购买 */
+#d30{
+	width:108px;
+	height:47px;
+	background:url("../image/btn_sprite.png")-11px -282px;
+	left:520px;
+	top:429px;
+	position:absolute;
+}
+#d31{
+	width:108px;
+	height:47px;
+	background:url("../image/btn_sprite.png")-11px -282px;
+	left:758px;
+	top:429px;
+	position:absolute;
+}
+#d32{
+	width:108px;
+	height:47px;
+	background:url("../image/btn_sprite.png")-11px -282px;
+	left:995px;
+	top:429px;
+	position:absolute;
+}
+#d33{
+	width:108px;
+	height:47px;
+	background:url("../image/btn_sprite.png")-11px -282px;
+	left:1224px;
+	top:429px;
+	position:absolute;
+}
+#d34{
+	width:108px;
+	height:47px;
+	background:url("../image/btn_sprite.png")-11px -282px;
+	left:520px;
+	top:661px;
+	position:absolute;
+}
+#d35{
+	width:108px;
+	height:47px;
+	background:url("../image/btn_sprite.png")-11px -282px;
+	left:760px;
+	top:662px;
+	position:absolute;
+}

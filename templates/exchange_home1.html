@@ -1,0 +1,65 @@
+{% extends "main.html" %}
+{% block title %}交易大厅{% endblock %}
+{% block head %}
+    {{ super() }}
+    <link rel="stylesheet" href="{{ url_for("static",filename="css/exchange_home1.css") }}">
+{% endblock %}
+{% block content %}
+    {#    <div id='main'>#}
+    <!-- 整个页面的div -->
+    <div><img class='bg' src="{{ url_for("static",filename="image/hall_packs_bg1.jpg") }}"></div>
+    <div><img class='bg' src="{{ url_for("static",filename="image/hall_packs_bg2.jpg") }}"></div>
+    <div><img class='bg' src="{{ url_for("static",filename="image/hall_packs_bg3.jpg") }}"></div>
+    <div><img class='bg' src="{{ url_for("static",filename="image/hall_packs_bg4.jpg") }}"></div>
+    <!-- 中间的三个矿源加点击时更换另一张图片-->
+
+    <!-- 右上角导航 -->
+    <div id="Nective">
+        <!-- 我的摊位 -->
+        <div id="d1"></div>
+        <!-- 交易大厅 -->
+        <div id="d2"></div>
+    </div>
+
+    <div id="d34">
+        <!-- 中间的背景图 -->
+        <div id="d3"><img src="../static/image/main_border.png"></div>
+        <div id="d4"><img src="../static/image/trading_hall_con_bg.jpg"></div>
+        <div id="d5"></div>
+        <div id="d6">
+            我的金币：<p id="d61">{{ money }}</p>
+        </div>
+        <div id="d7">钥匙类型</div>
+        <!-- 商品信息行 -->
+        <div id="d8"><img src="../static/image/tr_bg.png">
+            <p id="d811">数量1</p>
+            <p id="d812">卖家1</p>
+            <p id="d813">单价1</p>
+            <p id="d814">总价1</p>
+            <p id="d815">剩余1</p>
+            <!-- 购买按钮 -->
+            <input id="d14" type="button">
+            <!-- 钥匙图标 -->
+            <div id="d20"><img></div>
+        </div>
+        <!-- 上下左右箭头 -->
+        <div id="d26"><img></div>
+        <div id="d27"><img></div>
+        <div id="d28"><img></div>
+        <div id="d29"><img></div>
+        <!-- 刷新 -->
+        <div id="d30"></div>
+        <!-- 左右翻页 -->
+        <button id="d31" onclick="btnMinus()"></button>
+        <input type="text" id="txtNum" value="1" style="border:0px;background:none;">
+        <p id="txtNUM">/150</p>
+        <button id="d32" onclick="btnAdd()"></button>
+        <!--钥匙类型 - 下拉框 -->
+        <div id="d33">
+            <img>
+        </div>
+    </div>
+    <script src="../static/__js/conmon.js"></script>
+    <script src="../static/__js/AddMinus.js"></script>
+    {#    </div>#}
+{% endblock %}

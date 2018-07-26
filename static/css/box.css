@@ -1,0 +1,643 @@
+div, p, h1, h2, h3, h4, h5, h6, ol, ul {
+    margin: 0px;
+}
+
+input[type='radio']{
+    opacity:0;
+}
+
+#monty01 {
+    position: absolute;
+}
+
+
+/*最底层的div*/
+.a1 {
+    position: absolute;
+    width: 100%;
+    transform: translateX(-960px);
+}
+
+/*大框位置*/
+#a {
+    position: absolute;
+    left: 500px;
+    transform: translateY(-855px);
+}
+
+/*柜子的位置*/
+#b {
+    position: absolute;
+    left: 84px;
+    transform: translateY(-570px);
+}
+
+/*未打开时箱子的状态*/
+#c1 {
+    width: 209px;
+    height: 165px;
+    background: url('../image/box.png') -23px -37px;
+    position: absolute;
+    top: 175px;
+    left: 155px;
+}
+#c1_forlabel:checked + #c1 {
+    width: 209px;
+    height: 165px;
+    background: url("../image/box.png") -31px -226px;
+    position: absolute;
+    top: 165px;
+    left: 155px;
+}
+
+#c2 {
+    width: 209px;
+    height: 165px;
+    background: url('../image/box.png') -276px -43px;
+    position: absolute;
+    top: 182px;
+    left: 465px;
+}
+
+#c2_forlabel:checked + #c2 {
+    width: 209px;
+    height: 165px;
+    background: url('../image/box.png') -270px -227px;
+    position: absolute;
+    top: 170px;
+    left: 460px;
+}
+
+#c3 {
+    width: 209px;
+    height: 165px;
+    background: url('../image/box.png') -516px -43px;
+    position: absolute;
+    top: 185px;
+    left: 770px;
+}
+
+#c3_forlabel:checked + #c3 {
+    width: 209px;
+    height: 165px;
+    background: url('../image/box.png') -516px -229px;
+    top: 175px;
+    left: 770px;
+}
+
+
+#c4 {
+    width: 209px;
+    height: 165px;
+    background: url('../image/box.png') -756px -42px;
+    position: absolute;
+    top: 445px;
+    left: 165px;
+}
+
+#c4_forlabel:checked + #c4 {
+    width: 209px;
+    height: 165px;
+    background: url('../image/box.png') -751px -227px;
+    top: 435px;
+    left: 155px;
+}
+
+#c5 {
+    width: 209px;
+    height: 165px;
+    background: url('../image/box.png') -988px -39px;
+    position: absolute;
+    top: 440px;
+    left: 455px;
+}
+
+#c5_forlabel:checked + #c5 {
+    width: 209px;
+    height: 165px;
+    background: url('../image/box.png') -988px -227px;
+    top: 435px;
+    left: 450px;
+}
+
+#c6 {
+    width: 209px;
+    height: 200px;
+    background: url('../image/box.png') -1222px -5px;
+    position: absolute;
+    top: 410px;
+    left: 760px;
+}
+
+#c6_forlabel:checked + #c6 {
+    width: 209px;
+    height: 200px;
+    background: url('../image/box.png') -1230px -201px;
+    top: 410px;
+    left: 760px;
+}
+/*宝箱的接触后的效果图*/
+#c1:hover {
+    width: 209px;
+    height: 170px;
+    background: url('../image/box.png') -31px -226px;
+    top: 165px;
+    left: 155px;
+}
+
+#c2:hover {
+    width: 209px;
+    height: 165px;
+    background: url('../image/box.png') -270px -227px;
+    top: 170px;
+    left: 460px;
+}
+
+#c3:hover {
+    width: 209px;
+    height: 165px;
+    background: url('../image/box.png') -516px -229px;
+    top: 175px;
+    left: 770px;
+}
+
+#c4:hover {
+    width: 209px;
+    height: 165px;
+    background: url('../image/box.png') -751px -227px;
+    top: 435px;
+    left: 155px;
+}
+
+#c5:hover {
+    width: 209px;
+    height: 165px;
+    background: url('../image/box.png') -988px -227px;
+    top: 435px;
+    left: 450px;
+}
+
+#c6:hover {
+    width: 209px;
+    height: 200px;
+    background: url('../image/box.png') -1230px -201px;
+    top: 410px;
+    left: 760px;
+}
+
+/*宝箱打开后的状态*/
+#c7 {
+    width: 209px;
+    height: 165px;
+    background: url('../image/box.png') -31px -226px;
+    top: 164px;
+    left: 155px;
+    position: absolute;
+    visibility: hidden;
+}
+
+
+#c8 {
+    width: 209px;
+    height: 165px;
+    background: url('../image/box.png') -270px -227px;
+    top: 168px;
+    left: 457px;
+    position: absolute;
+    visibility: hidden;
+}
+
+#c9 {
+    width: 209px;
+    height: 165px;
+    background: url('../image/box.png') -516px -229px;
+    top: 168px;
+    left: 770px;
+    position: absolute;
+    visibility: hidden;
+}
+
+#c10 {
+    width: 209px;
+    height: 165px;
+    background: url('../image/box.png') -751px -227px;
+    top: 432px;
+    left: 160px;
+    position: absolute;
+    visibility: hidden;
+}
+
+#c11 {
+    width: 209px;
+    height: 165px;
+    background: url('../image/box.png') -988px -227px;
+    top: 435px;
+    left: 450px;
+    position: absolute;
+    visibility: hidden;
+}
+
+#c12 {
+    width: 209px;
+    height: 200px;
+    background: url('../image/box.png') -1230px -201px;
+    top: 415px;
+    left: 757px;
+    position: absolute;
+    visibility: hidden;
+}
+
+/*未满足情况时打开宝箱的位置*/
+#c13 {
+    width: 159px;
+    height: 52px;
+    background: url('../image/treasure_btn.png') -6px -107px;
+    position: absolute;
+    left: 165px;
+    top: 290px;
+}
+
+#c14 {
+    width: 159px;
+    height: 52px;
+    background: url('../image/treasure_btn.png') -6px -107px;
+    position: absolute;
+    left: 470px;
+    top: 290px;
+}
+
+#c15 {
+    width: 159px;
+    height: 52px;
+    background: url('../image/treasure_btn.png') -6px -107px;
+    position: absolute;
+    left: 780px;
+    top: 290px;
+}
+
+#c16 {
+    width: 159px;
+    height: 52px;
+    background: url('../image/treasure_btn.png') -6px -107px;
+    position: absolute;
+    left: 165px;
+    top: 555px;
+}
+
+#c17 {
+    width: 159px;
+    height: 52px;
+    background: url('../image/treasure_btn.png') -6px -107px;
+    position: absolute;
+    left: 470px;
+    top: 555px;
+}
+
+#c18 {
+    width: 159px;
+    height: 52px;
+    background: url('../image/treasure_btn.png') -6px -107px;
+    position: absolute;
+    left: 780px;
+    top: 555px;
+}
+
+/*满足情况时打开宝箱位置*/
+#c19 {
+    width: 140px;
+    height: 45px;
+    background: url('../image/treasure_btn.png') -15px -57px;
+    position: absolute;
+    left: 175px;
+    top: 293px;
+    /*visibility: hidden;*/
+    outline: none;
+}
+
+#c20 {
+    width: 140px;
+    height: 45px;
+    background: url('../image/treasure_btn.png') -15px -57px;
+    position: absolute;
+    left: 480px;
+    top: 293px;
+    /*visibility: hidden;*/
+    outline: none;
+}
+
+#c21 {
+    width: 140px;
+    height: 45px;
+    background: url('../image/treasure_btn.png') -15px -57px;
+    position: absolute;
+    left: 790px;
+    top: 293px;
+    /*visibility: hidden;*/
+    outline: none;
+}
+
+#c22 {
+    width: 140px;
+    height: 45px;
+    background: url('../image/treasure_btn.png') -15px -57px;
+    position: absolute;
+    left: 175px;
+    top: 560px;
+    /*visibility: hidden;*/
+    outline: none;
+}
+
+#c23 {
+    width: 140px;
+    height: 45px;
+    background: url('../image/treasure_btn.png') -15px -57px;
+    position: absolute;
+    left: 480px;
+    top: 560px;
+    /*visibility: hidden;*/-
+    outline: none;
+}
+
+#c24 {
+    width: 140px;
+    height: 45px;
+    background: url('../image/treasure_btn.png') -15px -57px;
+    position: absolute;
+    left: 790px;
+    top: 560px;
+    /*visibility: hidden;*/
+    outline: none;
+}
+
+/*神秘宝箱的标题位置*/
+#c25 {
+    width: 208px;
+    height: 52px;
+    background: url('../image/chunk_title.png') 5px -56px;
+    position: absolute;
+    left: 435px;
+    top: 18px;
+}
+
+/*条件未满足时的合成状态*/
+#c26 {
+    width: 79px;
+    height: 26px;
+    background: url('../image/treasure_btn.png') -160px -52px;
+    position: absolute;
+    left: 220px;
+    top: 115px;
+}
+
+#c27 {
+    width: 79px;
+    height: 26px;
+    background: url('../image/treasure_btn.png') -160px -52px;
+    position: absolute;
+    left: 520px;
+    top: 115px;
+}
+
+#c28 {
+    width: 79px;
+    height: 26px;
+    background: url('../image/treasure_btn.png') -160px -52px;
+    position: absolute;
+    left: 823px;
+    top: 115px;
+}
+
+#c29 {
+    width: 79px;
+    height: 26px;
+    background: url('../image/treasure_btn.png') -160px -52px;
+    position: absolute;
+    left: 220px;
+    top: 385px;
+}
+
+#c30 {
+    width: 79px;
+    height: 26px;
+    background: url('../image/treasure_btn.png') -160px -52px;
+    position: absolute;
+    left: 520px;
+    top: 385px;
+}
+
+#c31 {
+    width: 79px;
+    height: 26px;
+    background: url('../image/treasure_btn.png') -160px -52px;
+    position: absolute;
+    left: 823px;
+    top: 385px;
+}
+
+/*条件满足时合成的状态*/
+#c32 {
+    width: 70px;
+    height: 26px;
+    background: url('../image/treasure_btn.png') -158px 0px;
+    position: absolute;
+    left: 220px;
+    top: 115px;
+    outline: none;
+    visibility: hidden;
+}
+
+#c33 {
+    width: 70px;
+    height: 26px;
+    background: url('../image/treasure_btn.png') -158px 0px;
+    position: absolute;
+    left: 520px;
+    top: 115px;
+    outline: none;
+    visibility: hidden;
+}
+
+#c34 {
+    width: 70px;
+    height: 26px;
+    background: url('../image/treasure_btn.png') -158px 0px;
+    position: absolute;
+    left: 823px;
+    top: 115px;
+    outline: none;
+    visibility: hidden;
+}
+
+#c35 {
+    width: 70px;
+    height: 26px;
+    background: url('../image/treasure_btn.png') -158px 0px;
+    position: absolute;
+    left: 220px;
+    top: 385px;
+    outline: none;
+    visibility: hidden;
+}
+
+#c36 {
+    width: 70px;
+    height: 26px;
+    background: url('../image/treasure_btn.png') -158px 0px;
+    position: absolute;
+    left: 520px;
+    top: 385px;
+    outline: none;
+    visibility: hidden;
+}
+
+#c37 {
+    width: 70px;
+    height: 26px;
+    background: url('../image/treasure_btn.png') -158px 0px;
+    position: absolute;
+    left: 823px;
+    top: 385px;
+    outline: none;
+    visibility: hidden;
+}
+
+/*钥匙的状态*/
+#c38 {
+    width: 33px;
+    height: 33px;
+    background: url('../image/treasure_key.png') -0px -0px;
+    position: absolute;
+    top: 110px;
+    left: 108px;
+}
+
+#c39 {
+    width: 33px;
+    height: 33px;
+    background: url('../image/treasure_key.png') -35px -0px;
+    position: absolute;
+    top: 110px;
+    left: 415px;
+}
+
+#c40 {
+    width: 34px;
+    height: 34px;
+    background: url('../image/treasure_key.png') -70px -0px;
+    position: absolute;
+    top: 110px;
+    left: 715px;
+}
+
+#c41 {
+    width: 34px;
+    height: 34px;
+    background: url('../image/treasure_key.png') -105px -0px;
+    position: absolute;
+    top: 380px;
+    left: 108px;
+}
+
+#c42 {
+    width: 34px;
+    height: 34px;
+    background: url('../image/treasure_key.png') -140px -0px;
+    position: absolute;
+    top: 380px;
+    left: 415px;
+}
+
+#c43 {
+    width: 34px;
+    height: 34px;
+    background: url('../image/treasure_key.png') -175px -0px;
+    position: absolute;
+    top: 380px;
+    left: 715px;
+}
+
+/*变量的状态*/
+#c44 {
+    line-height: 25px;
+    font-size: 24px;
+    width: 44px;
+    height: 24px;
+    position: absolute;
+    left: 160px;
+    top: 110px;
+    color: #FFDDA6;
+}
+
+#c45 {
+    line-height: 25px;
+    font-size: 24px;
+    width: 44px;
+    height: 24px;
+    position: absolute;
+    left: 460px;
+    top: 110px;
+    color: #FFDDA6;
+}
+
+#c46 {
+    line-height: 25px;
+    font-size: 24px;
+    width: 44px;
+    height: 24px;
+    position: absolute;
+    left: 760px;
+    top: 110px;
+    color: #FFDDA6;
+}
+
+#c47 {
+    line-height: 25px;
+    font-size: 24px;
+    width: 44px;
+    height: 24px;
+    position: absolute;
+    left: 160px;
+    top: 380px;
+    color: #FFDDA6;
+}
+
+#c48 {
+    line-height: 25px;
+    font-size: 24px;
+    width: 44px;
+    height: 24px;
+    position: absolute;
+    left: 460px;
+    top: 380px;
+    color: #FFDDA6;
+}
+
+#c49 {
+    line-height: 25px;
+    font-size: 24px;
+    width: 44px;
+    height: 24px;
+    position: absolute;
+    left: 760px;
+    top: 380px;
+    color: #FFDDA6;
+}
+
+/*最底层火柱的状态*/
+#c50 {
+    position: absolute;
+    left: -195px;
+    top: 500px;
+}
+
+#c50 img {
+    width: 1500px;
+    height: 250px;
+}
+
+/*重写神秘宝箱样式,神秘宝箱按钮为选中状态*/
+#smbox {
+    width: 219px;
+    height: 81px;
+    background: url("../image/menu_bg.png") -218px -167px;
+}

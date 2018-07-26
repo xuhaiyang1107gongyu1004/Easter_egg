@@ -1,0 +1,830 @@
+/* 设置整个div */
+/*#d1 {*/
+    /*width: 1400px;*/
+    /*height: 760px;*/
+    /*position: relative;*/
+/*}*/
+
+/* 四个背景图 */
+.bg {
+    float: left;
+    width: 1920px;
+}
+
+#d34{
+    position: absolute;
+}
+
+/*导航位置*/
+#Nective{
+    position: absolute;
+    left: 1400px;
+    top: 100px;
+}
+
+/* 设置右上角导航 */
+#d1 {
+    top: 0;
+    left: 0;
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    background: url("../image/tag_bg.png") -490px -13px;
+}
+
+#d1:hover {
+    top: 0;
+    left: 0;
+    width: 112px;
+    height: 100px;
+    /*position:absolute;*/
+    background: url("../image/tag_bg.png") -484px -132px;
+}
+
+#d2 {
+    top: 0;
+    left: 115px;
+    width: 104px;
+    height: 103px;
+    position: absolute;
+    background: url("../image/tag_bg.png") -608px -131px;
+}
+
+/*中间的背景图*/
+#d3 {
+    position: absolute;
+    top: 220px;
+    left: 570px;
+}
+
+#d4 {
+    top: 316px;
+    left: 655px;
+    position: absolute;
+}
+
+
+#d5 {
+    position: absolute;
+    top: 240px;
+    left: 1000px;
+    width: 196px;
+    height: 46px;
+    background: url("../image/chunk_title.png") -213px -61px;
+
+}
+
+/* 我的金币 */
+#d6 {
+    color: #fadead;
+    position: absolute;
+    width: 150px;
+    height: 10px;
+    top: 342px;
+    left: 747px;
+}
+
+#d61 {
+    /*color: #fadead;*/
+    position: absolute;
+    width: 100px;
+    height: 30px;
+    top: 0px;
+    left: 80px;
+}
+
+#d7 {
+    color: rgb(250, 222, 173);
+    position: absolute;
+    width: 75px;
+    height: 10px;
+    top: 345px;
+    left: 1435px;
+    z-index: 1;
+}
+
+#d8 {
+    position: absolute;
+    top: 440px;
+    left: 696px;
+    width: 861px;
+    height: 50px;
+    background: url("../image/trading_hall_key.png") -118px -1px;
+}
+
+/* 商品每行信息 */
+#d80 {
+    /*position: absolute;*/
+    top: 440px;
+    left: 420px;
+    /*width: 48px;*/
+    /*height: 48px;*/
+    /*background: url("../image/trading_hall_key.png") -118px -1px;*/
+}
+
+/* 数量 */
+#d811 {
+    position: absolute;
+    text-align: left;
+    line-height: 50px;
+    top: 0;
+    left: 50px;
+    width: 50px;
+    height: 50px;
+}
+
+/* 卖家 */
+#d812 {
+    position: absolute;
+    text-align: center;
+    line-height: 50px;
+    top: 0;
+    left: 135px;
+    width: 110px;
+    height: 50px;
+}
+
+/* 单价 */
+#d813 {
+    position: absolute;
+    text-align: center;
+    line-height: 50px;
+    top: 0;
+    left: 270px;
+    width: 110px;
+    height: 50px;
+}
+
+/* 总价 */
+#d814 {
+    position: absolute;
+    text-align: center;
+    line-height: 50px;
+    top: 0;
+    left: 420px;
+    width: 110px;
+    height: 50px;
+}
+
+/* 剩余时间 */
+#d815 {
+    position: absolute;
+    text-align: center;
+    line-height: 50px;
+    top: 0;
+    left: 570px;
+    width: 110px;
+    height: 50px;
+}
+
+#d9 {
+    position: absolute;
+    top: 500px;
+    left: 420px;
+    width: 48px;
+    height: 48px;
+    background: url("../image/trading_hall_key.png") -118px -1px;
+}
+
+/* 数量 */
+#d921 {
+    position: absolute;
+    text-align: left;
+    line-height: 50px;
+    top: 500px;
+    left: 505px;
+    width: 40px;
+    height: 50px;
+}
+
+/* 卖家 */
+#d922 {
+    position: absolute;
+    text-align: center;
+    line-height: 50px;
+    top: 500px;
+    left: 570px;
+    width: 110px;
+    height: 50px;
+}
+
+/* 单价 */
+#d923 {
+    position: absolute;
+    text-align: center;
+    line-height: 50px;
+    top: 500px;
+    left: 720px;
+    width: 110px;
+    height: 50px;
+}
+
+/* 总价 */
+#d924 {
+    position: absolute;
+    text-align: center;
+    line-height: 50px;
+    top: 500px;
+    left: 870px;
+    width: 110px;
+    height: 50px;
+}
+
+/* 剩余时间 */
+#d925 {
+    position: absolute;
+    text-align: center;
+    line-height: 50px;
+    top: 500px;
+    left: 1020px;
+    width: 110px;
+    height: 50px;
+}
+
+#d10 {
+    position: absolute;
+    top: 560px;
+    left: 420px;
+    width: 48px;
+    height: 48px;
+    background: url("../image/trading_hall_key.png") -118px -1px;
+}
+
+/* 数量 */
+#d1031 {
+    position: absolute;
+    text-align: left;
+    line-height: 50px;
+    top: 560px;
+    left: 505px;
+    width: 40px;
+    height: 50px;
+}
+
+/* 卖家 */
+#d1032 {
+    position: absolute;
+    text-align: center;
+    line-height: 50px;
+    top: 560px;
+    left: 570px;
+    width: 110px;
+    height: 50px;
+}
+
+/* 单价 */
+#d1033 {
+    position: absolute;
+    text-align: center;
+    line-height: 50px;
+    top: 560px;
+    left: 720px;
+    width: 110px;
+    height: 50px;
+}
+
+/* 总价 */
+#d1034 {
+    position: absolute;
+    text-align: center;
+    line-height: 50px;
+    top: 560px;
+    left: 870px;
+    width: 110px;
+    height: 50px;
+}
+
+/* 剩余时间 */
+#d1035 {
+    position: absolute;
+    text-align: center;
+    line-height: 50px;
+    top: 560px;
+    left: 1020px;
+    width: 110px;
+    height: 50px;
+}
+
+#d11 {
+    position: absolute;
+    top: 620px;
+    left: 420px;
+    width: 48px;
+    height: 48px;
+    background: url("../image/trading_hall_key.png") -118px -1px;
+}
+
+/* 数量 */
+#d1141 {
+    position: absolute;
+    text-align: left;
+    line-height: 50px;
+    top: 620px;
+    left: 505px;
+    width: 40px;
+    height: 50px;
+}
+
+/* 卖家 */
+#d1142 {
+    position: absolute;
+    text-align: center;
+    line-height: 50px;
+    top: 620px;
+    left: 570px;
+    width: 110px;
+    height: 50px;
+}
+
+/* 单价 */
+#d1143 {
+    position: absolute;
+    text-align: center;
+    line-height: 50px;
+    top: 620px;
+    left: 720px;
+    width: 110px;
+    height: 50px;
+}
+
+/* 总价 */
+#d1144 {
+    position: absolute;
+    text-align: center;
+    line-height: 50px;
+    top: 620px;
+    left: 870px;
+    width: 110px;
+    height: 50px;
+}
+
+/* 剩余时间 */
+#d1145 {
+    position: absolute;
+    text-align: center;
+    line-height: 50px;
+    top: 620px;
+    left: 1020px;
+    width: 110px;
+    height: 50px;
+}
+
+#d12 {
+    position: absolute;
+    top: 680px;
+    left: 420px;
+    width: 48px;
+    height: 48px;
+    background: url("../image/trading_hall_key.png") -118px -1px;
+}
+
+/* 数量 */
+#d1251 {
+    position: absolute;
+    text-align: left;
+    line-height: 50px;
+    top: 680px;
+    left: 505px;
+    width: 40px;
+    height: 50px;
+}
+
+/* 卖家 */
+#d1252 {
+    position: absolute;
+    text-align: center;
+    line-height: 50px;
+    top: 680px;
+    left: 570px;
+    width: 110px;
+    height: 50px;
+}
+
+/* 单价 */
+#d1253 {
+    position: absolute;
+    text-align: center;
+    line-height: 50px;
+    top: 680px;
+    left: 720px;
+    width: 110px;
+    height: 50px;
+}
+
+/* 总价 */
+#d1254 {
+    position: absolute;
+    text-align: center;
+    line-height: 50px;
+    top: 680px;
+    left: 870px;
+    width: 110px;
+    height: 50px;
+}
+
+/* 剩余时间 */
+#d1255 {
+    position: absolute;
+    text-align: center;
+    line-height: 50px;
+    top: 680px;
+    left: 1020px;
+    width: 110px;
+    height: 50px;
+}
+
+#d13 {
+    position: absolute;
+    top: 740px;
+    left: 420px;
+    width: 48px;
+    height: 48px;
+    background: url("../image/trading_hall_key.png") -118px -1px;
+}
+
+/* 数量 */
+#d1361 {
+    position: absolute;
+    text-align: left;
+    line-height: 50px;
+    top: 740px;
+    left: 505px;
+    width: 40px;
+    height: 50px;
+}
+
+/* 卖家 */
+#d1362 {
+    position: absolute;
+    text-align: center;
+    line-height: 50px;
+    top: 740px;
+    left: 570px;
+    width: 110px;
+    height: 50px;
+}
+
+/* 单价 */
+#d1363 {
+    position: absolute;
+    text-align: center;
+    line-height: 50px;
+    top: 740px;
+    left: 720px;
+    width: 110px;
+    height: 50px;
+}
+
+/* 总价 */
+#d1364 {
+    position: absolute;
+    text-align: center;
+    line-height: 50px;
+    top: 740px;
+    left: 870px;
+    width: 110px;
+    height: 50px;
+}
+
+/* 剩余时间 */
+#d1365 {
+    position: absolute;
+    text-align: center;
+    line-height: 50px;
+    top: 740px;
+    left: 1020px;
+    width: 110px;
+    height: 50px;
+}
+
+/* 购买图标 */
+#d14 {
+    position: absolute;
+    left: 740px;
+    width: 88px;
+    height: 38px;
+    border: none;
+    background: url("../image/btn_bg.png") -10px -44px;
+}
+
+#d14:hover {
+    position: absolute;
+    left: 740px;
+    width: 88px;
+    height: 38px;
+    border: none;
+    background: url("../image/btn_bg.png") -121px -43px;
+}
+
+#d15 {
+    position: absolute;
+    top: 508px;
+    left: 1160px;
+    width: 88px;
+    height: 38px;
+    border: none;
+    background: url("../image/btn_bg.png") -10px -44px;
+}
+
+#d15:hover {
+    position: absolute;
+    top: 508px;
+    left: 1160px;
+    width: 88px;
+    height: 38px;
+    border: none;
+    background: url("../image/btn_bg.png") -121px -43px;
+}
+
+#d16 {
+    position: absolute;
+    top: 568px;
+    left: 1160px;
+    width: 88px;
+    height: 38px;
+    border: none;
+    background: url("../image/btn_bg.png") -10px -44px;
+}
+
+#d16:hover {
+    position: absolute;
+    top: 568px;
+    left: 1160px;
+    width: 88px;
+    height: 38px;
+    border: none;
+    background: url("../image/btn_bg.png") -121px -43px;
+}
+
+#d17 {
+    position: absolute;
+    top: 628px;
+    left: 1160px;
+    width: 88px;
+    height: 38px;
+    border: none;
+    background: url("../image/btn_bg.png") -10px -44px;
+}
+
+#d17:hover {
+    position: absolute;
+    top: 628px;
+    left: 1160px;
+    width: 88px;
+    height: 38px;
+    border: none;
+    background: url("../image/btn_bg.png") -121px -43px;
+}
+
+#d18 {
+    position: absolute;
+    top: 688px;
+    left: 1160px;
+    width: 88px;
+    height: 38px;
+    border: none;
+    background: url("../image/btn_bg.png") -10px -44px;
+}
+
+#d18:hover {
+    position: absolute;
+    top: 688px;
+    left: 1160px;
+    width: 88px;
+    height: 38px;
+    border: none;
+    background: url("../image/btn_bg.png") -121px -43px;
+}
+
+#d19 {
+    position: absolute;
+    top: 748px;
+    left: 1160px;
+    width: 88px;
+    height: 38px;
+    border: none;
+    background: url("../image/btn_bg.png") -10px -44px;
+}
+
+#d19:hover {
+    position: absolute;
+    top: 748px;
+    left: 1160px;
+    width: 88px;
+    height: 38px;
+    border: none;
+    background: url("../image/btn_bg.png") -121px -43px;
+}
+
+/* 钥匙图标 */
+#d20 {
+    position: absolute;
+    top: 0;
+    width: 48px;
+    height: 48px;
+    background: url("../image/trading_hall_key.png") -118px -1px;
+}
+
+#d21 {
+    position: absolute;
+    top: 500px;
+    left: 460px;
+    width: 48px;
+    height: 48px;
+    background: url("../image/trading_hall_key.png") -118px -1px;
+}
+
+#d22 {
+    position: absolute;
+    top: 560px;
+    left: 460px;
+    width: 48px;
+    height: 48px;
+    background: url("../image/trading_hall_key.png") -118px -1px;
+}
+
+#d23 {
+    position: absolute;
+    top: 620px;
+    left: 460px;
+    width: 48px;
+    height: 48px;
+    background: url("../image/trading_hall_key.png") -118px -1px;
+}
+
+#d24 {
+    position: absolute;
+    top: 680px;
+    left: 460px;
+    width: 48px;
+    height: 48px;
+    background: url("../image/trading_hall_key.png") -118px -1px;
+}
+
+#d25 {
+    position: absolute;
+    top: 740px;
+    left: 460px;
+    width: 48px;
+    height: 48px;
+    background: url("../image/trading_hall_key.png") -118px -1px;
+}
+
+#d26 {
+    position: absolute;
+    top: 405px;
+    left: 785px;
+    width: 13px;
+    height: 17px;
+    background: url("../image/search_icon.png") -117px -0px;
+}
+
+/*#d26:focus{*/
+/*position:absolute;*/
+/*top:405px;*/
+/*left:785px;*/
+/*width:13px;*/
+/*height:17px;*/
+/*background:url("../image/search_icon.png") -145px -0px;*/
+/*}*/
+
+#d27 {
+    position: absolute;
+    top: 405px;
+    left: 797px;
+    width: 13px;
+    height: 17px;
+    background: url("../image/search_icon.png") -131px -0px;
+}
+
+#d28 {
+    position: absolute;
+    top: 405px;
+    left: 935px;
+    width: 13px;
+    height: 17px;
+    background: url("../image/search_icon.png") -117px -0px;
+}
+
+#d29 {
+    position: absolute;
+    top: 405px;
+    left: 945px;
+    width: 13px;
+    height: 17px;
+    background: url("../image/search_icon.png") -131px -0px;
+}
+
+/* 刷新 */
+#d30 {
+    position: absolute;
+    top: 402px;
+    left: 1486px;
+    width: 30px;
+    height: 25px;
+    background: url("../image/search_icon.png") -117px -18px;
+}
+
+#d30:hover {
+    position: absolute;
+    top: 402px;
+    left: 1486px;
+    width: 30px;
+    height: 25px;
+    background: url("../image/search_icon.png") -147px -18px;
+}
+
+/* 左翻页 */
+#d31 {
+    position: absolute;
+    top: 402px;
+    left: 1486px;
+    width: 85px;
+    height: 30px;
+    border: none;
+    background: url("../image/paging_btn.png") -84px -0px;
+}
+
+#d31:hover {
+    position: absolute;
+    top: 402px;
+    left: 1486px;
+    width: 85px;
+    height: 30px;
+    border: none;
+    background: url("../image/paging_btn.png") -84px -31px;
+}
+
+#txtNum {
+    position: absolute;
+    top: 402px;
+    left: 1486px;
+    width: 20px;
+    height: 20px;
+    box-sizing: border-box;
+    text-align: center;
+    font-size: 16px;
+    vertical-align: middle;
+}
+
+#txtNUM {
+    position: absolute;
+    top: 402px;
+    left: 1486px;
+    width: 30px;
+    height: 20px;
+    box-sizing: border-box;
+    text-align: center;
+    font-size: 16px;
+    vertical-align: middle;
+}
+
+/* 右翻页 */
+#d32 {
+    position: absolute;
+    top: 402px;
+    left: 1486px;
+    width: 85px;
+    height: 30px;
+    border: none;
+    background: url("../image/paging_btn.png") -169px -0px;
+}
+
+#d32:hover {
+    position: absolute;
+    top: 402px;
+    left: 1486px;
+    width: 85px;
+    height: 30px;
+    border: none;
+    background: url("../image/paging_btn.png") -169px -31px;
+}
+
+/* 钥匙类型 */
+#d33 {
+    position: absolute;
+    top: 340px;
+    left: 1435px;
+    width: 117px;
+    height: 38px;
+    background: url("../image/search_icon.png") -0px -0px;
+    transform: scale(1.2);
+}
+
+#d33:hover {
+    position: absolute;
+    top: 354px;
+    left: 1435px;
+    width: 117px;
+    height: 155px;
+    background: url("../image/search_icon.png") -0px -40px;
+    transform: scale(1.2);
+}
+
+/*重写css样式*/
+#sendhome {
+
+    width: 219px;
+    height: 81px;
+    background: url("../image/menu_bg.png") -210px -249px;
+}
